@@ -3,7 +3,7 @@
 import banner from '../content/banner.txt?raw';   // ASCII hero
 import '../styles/global.css';                    // Tailwind entry
 
-export const title = 'Remote IT Help';
+const { title = 'Remote IT Help' } = Astro.props;
 ---
 
 <html lang="en" class="dark">
