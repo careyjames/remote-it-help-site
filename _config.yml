@@ -1,0 +1,37 @@
+title: "Remote IT Help"
+email: "hello@it-help.tech"
+description: "Your Expert Remote IT Support"
+baseurl: ""  # The base URL of your site, leave empty for the root
+url: "https://remote-it-help.com"
+
+# Theme setup - use Minima as the default theme
+theme: jekyll-theme-minimal
+
+# Enable Dark Mode CSS if available (optional, based on your customizations)
+highlighter: rouge  # Optional: This enables syntax highlighting
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Permalink settings (optional, based on your structure)
+permalink: pretty
+
+# Exclude files from the final build (e.g., any markdown files not to be processed)
+exclude:
+  - README.md
+  - test.md
+
+# Enable dark mode with custom CSS if you have a custom style
+# (Ensure you've written the proper CSS to handle the dark theme)
+sass:
+  style: compressed
+
+# Plugins (if needed, but optional here)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# Other customizations
+# Enable RSS feed for your blog
+feed:
+  path: /feed.xml
