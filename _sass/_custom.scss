@@ -3,15 +3,41 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1em;
+  padding: 1em 0;
+  margin-bottom: 2em; /* extra gap below header */
+  position: relative; /* keep in normal flow */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.75em; /* reduce header title size */
 }
 
 nav ul {
-  margin-top: 0.5em; /* space below the title */
+  margin-top: 0.5em;
+  padding-left: 0;
 }
 
 nav li {
   margin: 0 0.5em;
+}
+
+main {
+  padding-top: 0; /* rely on header margin for spacing */
+}
+
+main h1 {
+  margin-top: 0;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #BB86FC;
+  color: #000;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 0.5em;
 }
 
 /* Mode toggle placeholder - ensure no absolute positioning if present */
