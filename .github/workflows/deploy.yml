@@ -1,7 +1,9 @@
-name: Deploy Astro → S3 + CloudFront
+name: Deploy Jekyll → S3 + CloudFront
+
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   deploy:
@@ -9,28 +11,45 @@ jobs:
     env:
       BUCKET: remote-it-help.com
       DIST_ID: ${{ secrets.CF_DIST_ID }}
+      
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: 'npm'
-      - run: npm ci
-      - run: npm run build
+      # Checkout code
+      - name: Checkout code
+        uses: actions/checkout@v4
 
+      # Set up Ruby for Jekyll
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7'  # You can adjust this if necessary
+
+      # Install Jekyll and dependencies
+      - name: Install Jekyll and Bundler
+        run: |
+          gem install bundler
+          bundle install
+
+      # Build the Jekyll site
+      - name: Build the Jekyll site
+        run: |
+          bundle exec jekyll build
+
+      # Sync the built site to S3
       - name: Sync to S3
         uses: jakejarvis/s3-sync-action@v0.5.1
-        with: { args: --delete }
+        with:
+          args: --delete
         env:
           AWS_S3_BUCKET: ${{ env.BUCKET }}
-          AWS_REGION: us-east-1
-          SOURCE_DIR: dist
-          AWS_ACCESS_KEY_ID:     ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_REGION: us-east-1  # Update this with your AWS region
+          SOURCE_DIR: ./_site
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
-      - name: Invalidate CloudFront
+      # Invalidate CloudFront cache
+      - name: Invalidate CloudFront cache
         run: aws cloudfront create-invalidation --distribution-id $DIST_ID --paths '/*'
         env:
           AWS_REGION: us-east-1
-          AWS_ACCESS_KEY_ID:     ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
