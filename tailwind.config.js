@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         brand: {
-          DEFAULT: '#38bdf8',  // cyan-500 feel free to tweak
+          DEFAULT: '#22d3ee', // cyan-400 for better contrast
         },
       },
     },
