@@ -1,0 +1,36 @@
+/* Basic styling */
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  h1, h2, h3, h4 {
+    color: #fff;
+  }
+
+  a {
+    color: #1e90ff;
+  }
+
+  .button {
+    background-color: #1e90ff;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+  }
+
+  .button:hover {
+    background-color: #555;
+  }
+}
