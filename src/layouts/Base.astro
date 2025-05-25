@@ -1,0 +1,47 @@
+---
+const { title = 'remote-it-help.com' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <meta name="description" content="Secure, lightning-fast remote IT support for DNS, email security & more." />
+    <link rel="canonical" href="https://remote-it-help.com/" />
+    <link rel="icon" href="/favicon.svg" />
+  </head>
+
+  <body class="bg-bg text-fg font-sans antialiased">
+    <!-- ASCII banner -->
+    <header class="max-w-3xl mx-auto px-4 py-8">
+<pre class="font-mono text-accent text-sm leading-4 select-none">
+{String.raw`
+   ____                               _ _       _       _      
+  |  _ \ ___  ___ _ __ ___   ___   __| (_) __ _| |_ ___| |__   
+  | |_) / _ \/ __| '_ \ _ \ / _ \ / _\` | |/ _\` | __/ __| '_ \  
+  |  _ <  __/\__ \ |_) | | | (_) | (_| | | (_| | || (__| | | | 
+  |_| \_\___||___/ .__/|_| |_|\___/ \__,_|_|\__,_|\__\___|_| |_| 
+                |_|   remote-it-help.com
+`}
+</pre>
+
+      <!-- minimal nav -->
+      <nav class="mt-4 space-x-2 text-sm">
+        <a href="/" class="hover:text-accent">Home</a>•
+        <a href="/support" class="hover:text-accent">Get&nbsp;Help&nbsp;🔧</a>•
+        <a href="/about"   class="hover:text-accent">About&nbsp;🔒</a>
+      </nav>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-4 py-6">
+      <slot />
+    </main>
+
+    <footer class="text-center text-xs text-dim py-8">
+      Made with ♡ by IT Help San Diego Inc.<br>
+      <span class="italic">Fast, secure & tracker-free.</span>
+    </footer>
+  </body>
+</html>
