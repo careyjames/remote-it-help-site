@@ -11,10 +11,12 @@ jobs:
       DIST_ID: ${{ secrets.CF_DIST_ID }}
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
-        with: { version: 8 }
-      - run: pnpm install
-      - run: pnpm run build
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run build
 
       - name: Sync to S3
         uses: jakejarvis/s3-sync-action@v0.5.1
