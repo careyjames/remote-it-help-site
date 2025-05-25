@@ -1,19 +1,37 @@
 /* darkmode.css */
 body {
-  background-color: #121212; /* Dark background */
-  color: #e0e0e0; /* Light text color */
+  background-color: #333; /* Dark background */
+  color: #ffffff;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 a {
-  color: #BB86FC; /* Light purple link color */
+  color: #BB86FC; /* Link color */
 }
 
-header, footer {
-  background-color: #1f1f1f; /* Slightly lighter dark background for header/footer */
-  color: #ffffff; /* White text in header/footer */
+header,
+footer {
+  background-color: #444;
+  color: #ffffff;
+  padding: 1em 0;
 }
 
-/* Add other dark theme styles for elements here */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #BB86FC;
+}
+
+/* Additional dark theme styles can be added here */
