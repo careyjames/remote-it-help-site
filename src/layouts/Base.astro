@@ -1,47 +1,45 @@
 ---
-const { title = 'remote-it-help.com' } = Astro.props;
+const {title = 'Remote IT Help'} = Astro.props;
 ---
 
-<!DOCTYPE html>
-<html class="dark" lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>{title}</title>
-    <meta name="description" content="Secure, lightning-fast remote IT support for DNS, email security & more." />
-    <link rel="canonical" href="https://remote-it-help.com/" />
     <link rel="icon" href="/favicon.svg" />
+    <style>
+      @font-face {               /* tiny 2 KB WOFF monospace shipped in public/ */
+        font-family: 'CascadiaMono';
+        src: url('/CascadiaMono.woff2') format('woff2');
+      }
+    </style>
+    <link href="/tailwind.css" rel="stylesheet" />
   </head>
 
-  <body class="bg-bg text-fg font-sans antialiased">
-    <!-- ASCII banner -->
-    <header class="max-w-3xl mx-auto px-4 py-8">
-<pre class="font-mono text-accent text-sm leading-4 select-none">
-{String.raw`
-   ____                               _ _       _       _      
-  |  _ \ ___  ___ _ __ ___   ___   __| (_) __ _| |_ ___| |__   
-  | |_) / _ \/ __| '_ \ _ \ / _ \ / _\` | |/ _\` | __/ __| '_ \  
-  |  _ <  __/\__ \ |_) | | | (_) | (_| | | (_| | || (__| | | | 
-  |_| \_\___||___/ .__/|_| |_|\___/ \__,_|_|\__,_|\__\___|_| |_| 
-                |_|   remote-it-help.com
-`}
-</pre>
+  <body class="min-h-screen bg-gray-900 text-gray-100 font-sans antialiased">
+    <header class="max-w-4xl mx-auto px-4 py-6">
+<pre class="font-mono text-brand leading-none select-none">
+   ____                              _     _____ _____      _
+  |  _ \ ___  ___ ___  _ __ ___  ___| |_  |_   _| ____|_  _| |_ ___
+  | |_) / _ \/ __/ _ \| '__/ _ \/ __| __|   | | |  _| \ \/ / __/ _ \
+  |  _ <  __/ (_| (_) | | |  __/\__ \ |_    | | | |___ >  <| ||  __/
+  |_| \_\___|\___\___/|_|  \___||___/\__|   |_| |_____/_/\_\\__\___|
 
-      <!-- minimal nav -->
-      <nav class="mt-4 space-x-2 text-sm">
-        <a href="/" class="hover:text-accent">Home</a>•
-        <a href="/support" class="hover:text-accent">Get&nbsp;Help&nbsp;🔧</a>•
-        <a href="/about"   class="hover:text-accent">About&nbsp;🔒</a>
+</pre>
+      <nav class="space-x-4 mt-2 text-lg">
+        <a href="/"        class="hover:underline">Home</a>
+        <a href="/support" class="hover:underline text-brand">Get Help 🖥️</a>
+        <a href="/about"   class="hover:underline">About <span aria-label="lock">🔒</span></a>
       </nav>
     </header>
 
-    <main class="max-w-3xl mx-auto px-4 py-6">
-      <slot />
+    <main class="max-w-3xl mx-auto px-4 py-8">
+      <slot />                <!-- page content -->
     </main>
 
-    <footer class="text-center text-xs text-dim py-8">
-      Made with ♡ by IT Help San Diego Inc.<br>
-      <span class="italic">Fast, secure & tracker-free.</span>
+    <footer class="text-center text-sm text-gray-500 pb-6">
+      Made with ❤️ by IT Help San Diego Inc. • Fast, secure &amp; tracker-free.
     </footer>
   </body>
 </html>
