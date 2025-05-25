@@ -1,17 +1,12 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  darkMode: 'class',          // ← tell Tailwind we’ll control dark-mode with a class
-  content: [
-    './src/**/*.{astro,html,js,ts,jsx,tsx,md,mdx}'
+// tailwind.config.js
+import tailwindcss from '@tailwindcss/vite';
+import { defineConfig } from 'astro/tailwind';
+
+export default defineConfig({
+  darkMode: 'class',          // we toggle darkness via <html class="dark">
+  safelist: [
+    'bg-gray-900',
+    'text-gray-100',
   ],
-  theme: {
-    extend: {
-      colors: {
-        brand: {
-          DEFAULT: '#22d3ee', // cyan-400 for better contrast
-        },
-      },
-    },
-  },
-  plugins: [],
-};
+  plugins: [tailwindcss()],
+});
