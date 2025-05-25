@@ -1,5 +1,7 @@
-@use 'darkmode';
-@use "jekyll-theme-minimal";
-@use "fonts";
-@use "rouge-github";
-@use "custom";
+---
+---
+
+// Import the default theme first so our overrides apply afterwards
+@import "jekyll-theme-minimal";
+@import "darkmode";
+@import "custom";
