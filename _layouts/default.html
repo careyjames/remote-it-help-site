@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/darkmode.css' | relative_url }}">
-</head>
-<body>
+
+    <!-- Link to main stylesheets (if any) -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Link to the darkmode stylesheet -->
+    <link rel="stylesheet" href="/assets/css/darkmode.css">
+    
+  </head>
+
+  <body>
     <header>
-        <h1>{{ site.title }}</h1>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-            </ul>
-        </nav>
+      <h1>{{ site.title }}</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
     </header>
-    
+
     <main>
-        {{ content }}
+      {{ content }}
     </main>
-    
+
     <footer>
-        <p>Copyright © {{ site.time | date: '%Y' }}</p>
+      <p>Copyright © {{ site.time | date: '%Y' }}</p>
     </footer>
-</body>
+  </body>
 </html>
