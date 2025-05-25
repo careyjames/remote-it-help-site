@@ -3,8 +3,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1em;
-  position: relative; /* ensure header does not overlap content */
+
 }
 
 nav ul {
@@ -16,7 +15,7 @@ nav li {
 }
 
 main {
-  padding-top: 1em; /* space below the header */
+
 }
 
 .cta-button {
