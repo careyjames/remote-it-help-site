@@ -3,13 +3,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 2em; /* add more space below the header */
-  position: relative; /* ensure header does not overlap content */
-}
 
-header h1 {
-  margin: 0;
-  font-size: 1.75em; /* slightly smaller site title */
 }
 
 nav ul {
@@ -21,7 +15,7 @@ nav li {
 }
 
 main {
-  padding-top: 2em; /* extra space below the header */
+
 }
 
 .cta-button {
