@@ -3,14 +3,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1em 0;
-  margin-bottom: 2em; /* extra gap below header */
-  position: relative; /* keep in normal flow */
-}
 
-header h1 {
-  margin: 0;
-  font-size: 1.75em; /* reduce header title size */
 }
 
 nav ul {
@@ -23,11 +16,7 @@ nav li {
 }
 
 main {
-  padding-top: 0; /* rely on header margin for spacing */
-}
 
-main h1 {
-  margin-top: 0;
 }
 
 .cta-button {
