@@ -3,10 +3,15 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 1em;
 }
 
 nav ul {
   margin-top: 0.5em; /* space below the title */
+}
+
+header h1 {
+  margin-bottom: 0.5em; /* extra spacing to keep nav off the title */
 }
 
 nav li {

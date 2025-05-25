@@ -1,5 +1,8 @@
-@use 'darkmode';
-@use "jekyll-theme-minimal";
-@use "fonts";
-@use "rouge-github";
-@use "custom";
+---
+---
+
+// Import the default theme first so our dark styles can override it
+@import "jekyll-theme-minimal";
+@import "darkmode";
+// Removed missing imports for fonts and Rouge styles
+@import "custom";
