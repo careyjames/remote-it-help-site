@@ -5,14 +5,19 @@
 
 body {
   background-color: #161b22; /* Slightly Lighter Dark Background */
-  color: #c9d1d9; 
+  color: #c9d1d9;
   font-family: "JetBrains Mono", "Courier New", monospace; /* Using JetBrains Mono */
   margin: 0;
   padding: 0;
 }
 
+/* Ensure paragraphs use the main color */
+p {
+  color: #c9d1d9 !important; /* Added !important to help override */
+}
+
 a {
-  color: #58a6ff; 
+  color: #58a6ff;
 }
 
 h1 {
@@ -27,18 +32,34 @@ h3 {
   color: #58a6ff; /* Vibrant Blue, same as H2 */
 }
 
-header h1 a { 
+header h1 a {
   color: #58a6ff;
   text-decoration: none;
 }
 
-li strong {
-  color: #e6edf3; /* Brighter white/grey for bold text in lists */
+/* Ensure strong and list strong are bright */
+strong, li strong {
+  color: #e6edf3 !important; /* Brighter white/grey + !important */
+  font-weight: bold;
 }
 
-strong { /* General bold text if not in a list, can be same as body or slightly brighter */
-    font-weight: bold; /* Default browser bold is usually fine */
-    /* color: #e0e0e0; */ /* Optional: if you want all bold text slightly brighter */
+/* Style for inline code */
+code {
+  background-color: #282c34; /* Slightly different dark background */
+  color: #abb2bf !important; /* Lighter grey for code + !important */
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  border-radius: 6px;
+}
+
+/* Style for code blocks */
+pre, pre code {
+    background-color: #282c34 !important; /* Ensure override */
+    color: #abb2bf !important;
+    border-radius: 6px;
+    padding: 1em;
+    overflow: auto;
 }
 
 
@@ -84,7 +105,7 @@ footer::before {
   white-space: pre;
   text-align: center;
   margin-bottom: 1rem;
-  color: #8b949e; 
+  color: #8b949e;
 }
 
 /* Style for p=none tag and similar tags */
@@ -93,7 +114,7 @@ footer::before {
   color: #0d1117; /* Dark text */
   padding: 3px 6px;
   border-radius: 4px;
-  font-family: "JetBrains Mono", "Courier New", monospace; 
+  font-family: "JetBrains Mono", "Courier New", monospace;
   font-weight: bold;
 }
 
