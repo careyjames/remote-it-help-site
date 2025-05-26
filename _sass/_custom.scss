@@ -8,7 +8,9 @@ header {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  margin-bottom: 2rem;
+  width: 100%;
+  float: none;
+  margin-bottom: 0;
 }
 
 header h1 {
@@ -26,6 +28,14 @@ nav ul {
 
 main h1:first-child {
   margin-top: 0;
+}
+
+main {
+  margin-top: 2rem;
+}
+
+footer {
+  margin-top: 2rem;
 }
 
 .cta-button {
