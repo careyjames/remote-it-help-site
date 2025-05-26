@@ -3,6 +3,36 @@ layout: default
 title: About Carey Balboa & Remote IT Help
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Carey Balboa & Remote IT Help",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Remote IT Help",
+    "alternateName": "IT Help San Diego Inc.",
+    "founder": {
+      "@type": "Person",
+      "name": "Carey Balboa",
+      "jobTitle": "Founder",
+      "description": "25+ years experience in IT support, specializing in Mac, iOS, DNS, email, and cybersecurity."
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "888 Prospect Street Suite 200",
+      "addressLocality": "La Jolla",
+      "addressRegion": "CA",
+      "postalCode": "92037",
+      "addressCountry": "US"
+    },
+     "url": "{{ site.url }}{{ page.url | relative_url }}"
+  },
+  "description": "Learn about Carey Balboa, the founder of Remote IT Help (IT Help San Diego Inc.), with 25 years of experience providing expert, ethical remote IT support.",
+   "url": "{{ site.url }}{{ page.url | relative_url }}"
+}
+</script>
+
 # About Carey Balboa 🧑‍🔬
 
 Hi, I’m Carey Balboa.
