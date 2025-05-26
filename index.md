@@ -16,7 +16,7 @@ Struggling with email deliverability, domain security, or complex DNS configurat
 -   **Mac Mail Support** 🍎: Specialized setup & troubleshooting for macOS email clients.
 -   **Website & Domain Recovery** 🌐: Regain access and control over your digital assets.
 -   **Advanced DNS Management**: Precision edits for MX, SPF, DKIM, DMARC, DNSSEC, and BIMI records.
--   **Bulletproof DNS & DMARC Security**: We architect security-compliant DNS solutions with robust DMARC implementations (p=reject), moving beyond `p=none` to actively protect your domain from spoofing and phishing attacks.
+-   **Bulletproof DNS & DMARC Security**: We architect security-compliant DNS solutions with robust DMARC implementations (p=reject), moving beyond <span class="dmarc-tag">p=none</span> to actively protect your domain from spoofing and phishing attacks.
 
 ## Expert Email Deliverability & DNS Security 📧
 
