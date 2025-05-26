@@ -16,11 +16,16 @@ a {
 }
 
 h1 {
- color: #4CAF50; /* NEW Flat Green */
+ color: #27ae60; /* Flat Green */
 }
 
 h2 {
  color: #58a6ff; /* Vibrant Blue */
+}
+
+/* Style for H3 tags within blog post content */
+.post-content h3 {
+  color: #58a6ff; /* Vibrant Blue, same as H2 */
 }
 
 header h1 a { 
@@ -99,7 +104,7 @@ footer::before {
 .final-tagline {
   font-size: 1.2em; /* Make it slightly larger */
   font-weight: bold;
-  color: #4CAF50; /* NEW Flat Green */
+  color: #27ae60; /* Flat Green */
   text-transform: uppercase;
   margin-top: 2rem; /* Add some space above it */
 }
