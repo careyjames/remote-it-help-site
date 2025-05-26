@@ -2,24 +2,68 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | {{ site.title }}</title>
+
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "{{ site.title }}",
-        "url": "{{ site.url }}",
-        "description": "{{ site.description }}",
-        "publisher": {
-          "@type": "Organization",
-          "name": "IT Help San Diego Inc.",
-          "url": "https://it-help.tech"
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "{{ site.title }}",
+      "url": "{{ site.url }}",
+      "description": "{{ site.description }}",
+      "telephone": "+1-619-853-5008",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "888 Prospect Street Suite 200",
+        "addressLocality": "La Jolla",
+        "addressRegion": "CA",
+        "postalCode": "92037",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "USA"
+      },
+      "serviceType": [
+        "Remote IT Support",
+        "DNS Management",
+        "DMARC Implementation",
+        "Email Deliverability Troubleshooting",
+        "Mac Support",
+        "Cybersecurity Consulting"
+      ],
+      "provider": {
+        "@type": "Organization",
+        "name": "IT Help San Diego Inc.",
+        "url": "https://it-help.tech"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Remote IT Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Remote Support (Hourly)"
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "275.00",
+              "priceCurrency": "USD",
+              "unitText": "HOUR"
+            }
+          }
+        ]
       }
-      </script>
-  </head>
+    }
+    </script>
+
+    </head>
+
   <body>
     <header class="container">
       <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a> 🚀</h1>
