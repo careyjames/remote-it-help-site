@@ -5,24 +5,21 @@ title: Home
 
 # Welcome to Remote IT Help 🛡️
 
-We provide expert IT support services tailored to your needs.
+We provide expert remote IT troubleshooting and infrastructure support.
 
-## Email, Website, Domain, & DNS 🌐
+## Advanced Email, Domain, & DNS Solutions 🌐
 
-Having trouble with your email or website? IT Help San Diego will ensure your site and email are running smoothly so you can focus on running your business. We solve email deliverability and get your emails out of spam folders.
+Struggling with email deliverability, domain security, or complex DNS configurations? IT Help San Diego provides the expert support you need to ensure these critical systems run flawlessly, letting you focus on your business. We diagnose and resolve deep-seated email issues, rescuing your messages from spam folders and ensuring reliable delivery.
 
-- Email Migration 📧
-- Setup & troubleshooting ⚙️
-- Hosted email signatures ✍️
-- Mac mail setup & troubleshooting 🍎
-- Website & domain recovery 🌐
-- DNS edits & MX records: SPF, DKIM, DMARC, and BIMI (advanced email security settings) 🛡️
-- We architect bulletproof security-compliant DNS solutions fortified with cutting-edge DMARC implementations, transforming complex DNS security into unmatched reliability—because critical systems demand perfection.
+-   **Email Migration & Troubleshooting** 📧: Seamless transitions and expert fixes for complex email problems.
+-   **Hosted Email Signatures** ✍️: Professional signatures, managed centrally.
+-   **Mac Mail Support** 🍎: Specialized setup & troubleshooting for macOS email clients.
+-   **Website & Domain Recovery** 🌐: Regain access and control over your digital assets.
+-   **Advanced DNS Management**: Precision edits for MX, SPF, DKIM, DMARC, DNSSEC, and BIMI records.
+-   **Bulletproof DNS & DMARC Security**: We architect security-compliant DNS solutions with robust DMARC implementations (p=reject), moving beyond `p=none` to actively protect your domain from spoofing and phishing attacks.
 
-## Email & Custom Domain 📧
+## Expert Email Deliverability & DNS Security 📧
 
-Are you having trouble with your email or website? We can help ensure that your site and email are running smoothly, allowing you to focus on running your business. We specialize in DNS edits, phishing, and Business Email Compromise (BEC), assisting companies in becoming DMARC compliant and resolving email delivery issues.
-
-Navigate the complexities of DNS management and ensure critical business emails reach the inbox with IT Help San Diego’s expert in email deliverability and security. We specialize in configuring SPF, DKIM, DMARC, and BIMI records to protect your brand, prevent spoofing, and comply with new sender requirements from Google and Yahoo. If you’re facing issues with emails going to spam or email rejection, we provide advanced troubleshooting and architect security-compliant DNS solutions.
+Navigate the complexities of modern email standards and secure your domain. We specialize in configuring SPF, DKIM, DMARC, and BIMI to protect your brand, prevent spoofing, and meet the latest sender requirements from Google and Yahoo. If you're battling spam folder placements or email rejections, we offer advanced troubleshooting and build security-hardened DNS infrastructures.
 
 Remember, if your DMARC says <span class="dmarc-tag">p=none</span>, your work’s not done! 🧑‍💻
