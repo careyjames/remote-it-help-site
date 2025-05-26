@@ -15,8 +15,8 @@
       <h1>{{ site.title }}</h1>
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/services">Services</a></li>
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/services.html' | relative_url }}">Services</a></li>
         </ul>
       </nav>
       <a href="https://schedule.it-help.tech/" class="cta-button">Book now</a>

@@ -14,7 +14,10 @@ kramdown:
   input: GFM
 
 # Permalink settings (optional, based on your structure)
-permalink: pretty
+# Use default style so each page outputs as a single HTML file
+# in the site root instead of within its own directory
+# This keeps the deployed structure simple (e.g., services.html)
+# permalink: pretty
 
 # Exclude files from the final build (e.g., any markdown files not to be processed)
 exclude:
