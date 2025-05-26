@@ -3,6 +3,31 @@ layout: default
 title: Home - Expert Remote IT Support for Complex Tech Challenges
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can you help with Mac, iOS, PC, or mixed computer environments remotely?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! Our primary expertise lies with **macOS and iOS support**, and we excel at remote troubleshooting for these platforms, including **secure screen sharing directly with iPhones and iPads**. We also possess a deep understanding of Windows and Linux systems, enabling us to support diverse tech environments effectively. My daily driver is Kali Purple Linux (a specialized security-focused operating system), so we're comfortable across platforms."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is your service different from a Managed Service Provider (MSP)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We take a different approach focused on transparency and on-demand support. Unlike many MSPs that lock clients into fixed monthly fees regardless of usage, we believe you should only pay for IT help when needed. There are no long-term contracts or arbitrary retainers with us – just fair, transparent billing for actual work performed. Think of it as having an elite IT team on call: we can essentially become part of your team on an as-needed basis. This flexible model saves you money and builds trust, since our incentive is to solve issues efficiently, not to pad hours. We offer high-touch, on-demand IT support as an ethical alternative to the traditional MSP model."
+      }
+    }
+  ]
+}
+</script>
+
 # Welcome to Remote IT Help 🛡️
 
 Your tech problems are about to disappear. We deliver concierge-level remote tech help nationwide, backed by 25+ years of expert IT support experience, specializing in Mac, iOS, DNS, email deliverability, and cybersecurity.
