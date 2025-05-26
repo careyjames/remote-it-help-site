@@ -4,24 +4,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 1.5em;
-  position: relative;
-}
-
-header h1 {
-  margin: 0;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 1em;
-}
-
-main {
-  margin-top: 1em;
+ main
 }
 
 .cta-button {
@@ -32,17 +15,18 @@ main {
   border-radius: 4px;
   text-decoration: none;
   margin-top: 0.5em;
+ main
 }
 
 @media (max-width: 600px) {
   header {
     flex-direction: column;
-    align-items: center;
+ main
   }
 
   nav ul {
     flex-direction: column;
-    gap: 0.5em;
+main
   }
 }
 
