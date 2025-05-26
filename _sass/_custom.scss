@@ -7,10 +7,14 @@ header {
   flex-wrap: wrap;
   gap: 1rem;
   padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 nav ul {
   display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
   gap: 1rem;
 }
 
@@ -36,6 +40,10 @@ main h1:first-child {
 
   nav ul {
     flex-direction: column;
+  }
+
+  .cta-button {
+    align-self: flex-start;
   }
 }
 
