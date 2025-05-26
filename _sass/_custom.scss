@@ -61,7 +61,7 @@ footer p {
 }
 
 .cta-button {
-  display: inline-block;
+  display: inline-block; /* Default to inline-block for desktop */
   background-color: #58a6ff; /* USE BLUE for the button */
   color: #0d1117; /* Use dark background color for text */
   padding: 0.5em 1em;
@@ -70,7 +70,8 @@ footer p {
   margin-top: 0.5em;
   transition: background-color 0.3s ease; 
   font-weight: bold; /* Make text bold */
-  position: relative; /* Needed for left/right adjustments */
+  position: relative; 
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .cta-button:hover {
@@ -109,8 +110,11 @@ footer p {
   }
 
   .cta-button {
-    align-self: center; 
-    left: -8px; /* Nudge button 8px to the left (Lucky Number!) */
+    display: block; /* Make button full-width */
+    width: 100%; /* Ensure it spans the container */
+    text-align: center; /* Center text within the button */
+    align-self: auto; /* Let it follow normal flow (don't force center) */
+    left: auto; /* Remove any previous 'left' nudge */
   }
 
   .button-icon {
