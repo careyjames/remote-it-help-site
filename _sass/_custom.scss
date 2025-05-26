@@ -3,10 +3,10 @@
 header {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;   /* Center elements horizontally */
+  text-align: center;    /* Center text within elements */
+  gap: 1rem;             /* Keep some space between elements */
   padding: 1rem;
   width: 100%;
   float: none;
@@ -20,7 +20,8 @@ header h1 {
 
 nav ul {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;       /* Allow nav items to wrap if needed */
+  justify-content: center; /* Center nav items */
   list-style: none;
   padding: 0;
   margin: 0;
@@ -46,44 +47,41 @@ footer {
   width: 100%;
 }
 
-/* Ensure the container inside the footer doesn't override centering */
 footer.container {
-    width: 100%; /* Allow footer to span full width */
+    width: 100%; 
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
 }
 
 footer p { 
-    margin: 0 auto; /* Center the paragraph text */
+    margin: 0 auto; 
     text-align: center;
-    padding-bottom: 0.5rem; /* Add a bit of space between footer lines */
+    padding-bottom: 0.5rem; 
 }
 
 .cta-button {
   display: inline-block;
-  background-color: #27ae60; /* NEW Flat Green */
-  color: #fff; /* Keep text white for contrast */
+  background-color: #58a6ff; /* USE BLUE for the button */
+  color: #0d1117; /* Use dark background color for text */
   padding: 0.5em 1em;
   border-radius: 4px;
   text-decoration: none;
   margin-top: 0.5em;
   transition: background-color 0.3s ease; 
+  font-weight: bold; /* Make text bold */
 }
 
 .cta-button:hover {
-  background-color: #1e8449; /* Darker green for hover */
+  background-color: #8ab4f8; /* Lighter blue for hover */
+  color: #0d1117;
 }
 
+/* Remove mobile overrides as header is now always centered */
 @media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    align-items: center; /* Center header items for symmetry */
-  }
-
   nav ul {
     flex-direction: column;
-    align-items: center; /* Center nav items for symmetry */
+    align-items: center; 
     width: 100%; 
     padding-left: 0; 
   }
@@ -92,10 +90,8 @@ footer p {
       margin-right: 0; 
       margin-bottom: 0.5rem; 
   }
-
-  .cta-button {
-    align-self: center; /* Center button on mobile */
-  }
+  
+  /* No need for header or cta-button overrides now */
 }
 
 
@@ -107,8 +103,8 @@ footer p {
 
 /* Style for the footer brag line */
 .footer-brag {
-  font-size: 0.85em; /* Make it a bit smaller */
-  color: #8b949e; /* Use the muted color like the ASCII art */
+  font-size: 0.85em; 
+  color: #8b949e; 
   font-style: italic;
-  margin-top: 0.5rem; /* Space it from the copyright */
+  margin-top: 0.5rem; 
 }
