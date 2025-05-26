@@ -1,6 +1,7 @@
 # Remote IT Help Site
 
-This is a static website built using **Jekyll**.
+This is our static website built using **Jekyll**.
 
-IT Help San Diego Inc.
+© 2025 Remote IT Help. A service by IT Help San Diego Inc.
 
+✨ Built with Jekyll/GitHub, hosted on AWS S3/CloudFront/Route 53 (<$10/mo). Zero JS, trackers, or cookies. Just lean, fast, cost-efficient tech. ✨
