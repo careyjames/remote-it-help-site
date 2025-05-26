@@ -62,7 +62,7 @@ footer p {
 
 .cta-button {
   display: inline-block;
-  background-color: #2EA043; /* NEW Unified High-Tech Green */
+  background-color: #27ae60; /* NEW Flat Green */
   color: #fff; /* Keep text white for contrast */
   padding: 0.5em 1em;
   border-radius: 4px;
@@ -72,29 +72,29 @@ footer p {
 }
 
 .cta-button:hover {
-  background-color: #238636; /* Slightly darker green for hover */
+  background-color: #1e8449; /* Darker green for hover */
 }
 
 @media (max-width: 600px) {
   header {
     flex-direction: column;
-    align-items: flex-start; /* Align header items to the start (left) */
+    align-items: center; /* Center header items for symmetry */
   }
 
   nav ul {
     flex-direction: column;
-    align-items: flex-start; /* Align nav items to the start (left) */
-    width: 100%; /* Ensure nav takes full width */
-    padding-left: 0; /* Remove default padding */
+    align-items: center; /* Center nav items for symmetry */
+    width: 100%; 
+    padding-left: 0; 
   }
 
   nav li {
-      margin-right: 0; /* Remove right margin on mobile */
-      margin-bottom: 0.5rem; /* Add some space between stacked links */
+      margin-right: 0; 
+      margin-bottom: 0.5rem; 
   }
 
   .cta-button {
-    align-self: flex-start;
+    align-self: center; /* Center button on mobile */
   }
 }
 
