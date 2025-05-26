@@ -94,11 +94,12 @@ footer p {
       margin-right: 0; 
       margin-bottom: 0.5rem; 
       width: 100%; /* Make each LI take full width */
-      text-align: center; /* Center the content (link) inside the LI */
+      /* text-align: center; */ /* Remove text-align here */
   }
 
   nav li a {
-      display: inline-block; /* Ensure link behaves well for centering */
+      display: block; /* Make link full width */
+      text-align: center; /* Center text *within* the full-width link */
   }
 
   .cta-button {
