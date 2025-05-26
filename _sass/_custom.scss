@@ -11,12 +11,12 @@ header {
   width: 100%;
   float: none;
   margin-bottom: 0;
-  border-bottom: 1px solid #30363d; /* Add a subtle border */
+  /* border-bottom: 1px solid #30363d; */ /* Removed this line */
 }
 
 header h1 {
   margin: 0;
-  font-size: 1.5em; /* Slightly smaller for a cleaner look */
+  font-size: 1.5em; 
 }
 
 nav ul {
@@ -38,22 +38,25 @@ main {
 
 footer {
   margin-top: 2rem;
-  border-top: 1px solid #30363d; /* Add a subtle border */
+  padding-top: 1rem; /* Add some padding */
+  /* border-top: 1px solid #30363d; */ /* Removed this line */
+  background-color: #161b22; /* Slightly different background for footer */
+  text-align: center; /* Center footer text */
 }
 
 .cta-button {
   display: inline-block;
-  background-color: #238636; /* GitHub green */
+  background-color: #238636; 
   color: #fff;
   padding: 0.5em 1em;
   border-radius: 4px;
   text-decoration: none;
   margin-top: 0.5em;
-  transition: background-color 0.3s ease; /* Add a transition */
+  transition: background-color 0.3s ease; 
 }
 
 .cta-button:hover {
-  background-color: #2ea043; /* Darker green on hover */
+  background-color: #2ea043; 
 }
 
 @media (max-width: 600px) {
