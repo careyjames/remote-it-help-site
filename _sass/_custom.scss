@@ -77,8 +77,12 @@ footer p {
   color: #0d1117;
 }
 
-/* Remove mobile overrides as header is now always centered */
 @media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center; 
+  }
+
   nav ul {
     flex-direction: column;
     align-items: center; 
@@ -89,9 +93,17 @@ footer p {
   nav li {
       margin-right: 0; 
       margin-bottom: 0.5rem; 
+      width: 100%; /* Make each LI take full width */
+      text-align: center; /* Center the content (link) inside the LI */
   }
-  
-  /* No need for header or cta-button overrides now */
+
+  nav li a {
+      display: inline-block; /* Ensure link behaves well for centering */
+  }
+
+  .cta-button {
+    align-self: center; 
+  }
 }
 
 
