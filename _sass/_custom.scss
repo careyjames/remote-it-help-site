@@ -57,7 +57,6 @@ footer.container {
 footer p { 
     margin: 0 auto; /* Center the paragraph text */
     text-align: center;
-
 }
 
 .cta-button {
@@ -99,10 +98,8 @@ footer p {
 }
 
 
-/* Make sure the main container doesn't affect the footer's centering */
 .container {
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
-  /* text-align: left; */ /* Remove or ensure it's not overriding footer */
 }
