@@ -70,6 +70,7 @@ footer p {
   margin-top: 0.5em;
   transition: background-color 0.3s ease; 
   font-weight: bold; /* Make text bold */
+  position: relative; /* Needed for left/right adjustments */
 }
 
 .cta-button:hover {
@@ -109,6 +110,7 @@ footer p {
 
   .cta-button {
     align-self: center; 
+    left: -3px; /* Nudge button 3px to the left */
   }
 
   .button-icon {
