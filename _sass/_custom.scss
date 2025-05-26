@@ -46,8 +46,18 @@ footer {
   width: 100%;
 }
 
-footer p { /* Ensure footer p is centered */
+/* Ensure the container inside the footer doesn't override centering */
+footer.container {
+    width: 100%; /* Allow footer to span full width */
+    max-width: 100%;
     margin: 0 auto;
+    text-align: center;
+}
+
+footer p { 
+    margin: 0 auto; /* Center the paragraph text */
+    text-align: center;
+
 }
 
 .cta-button {
@@ -89,8 +99,10 @@ footer p { /* Ensure footer p is centered */
 }
 
 
+/* Make sure the main container doesn't affect the footer's centering */
 .container {
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
+  /* text-align: left; */ /* Remove or ensure it's not overriding footer */
 }
