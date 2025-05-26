@@ -1,12 +1,14 @@
 /* Custom styles */
 
 header {
+  position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
 }
 
 header h1 {
@@ -15,10 +17,18 @@ header h1 {
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0;
   gap: 1rem;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.3em 0.75em;
+  border-radius: 4px;
+  text-decoration: none;
 }
 
 main h1:first-child {
@@ -53,4 +63,10 @@ main h1:first-child {
 /* Mode toggle placeholder - ensure no absolute positioning if present */
 #mode-toggle {
   position: static;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
 }

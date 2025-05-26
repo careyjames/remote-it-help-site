@@ -1,21 +1,33 @@
 /* _darkmode.scss */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #333; /* Dark gray background */
-  color: #ffffff;
-  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: "Fira Code", monospace;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 
 a {
-  color: #BB86FC;
+  color: #8ab4f8;
 }
 
-header,
+header {
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+  padding: 1rem;
+  border-bottom: 1px solid #333;
+}
+
 footer {
-  background-color: #444; /* Slightly lighter dark background for header/footer */
-  color: #ffffff;
-  padding: 1em;
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+  padding: 1rem;
+  border-top: 1px solid #333;
 }
 
 nav ul {
@@ -26,12 +38,27 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 0;
 }
 
 nav a {
   text-decoration: none;
-  color: #BB86FC;
+  color: #8ab4f8;
+  background-color: #262626;
+  border: 1px solid #333;
+  padding: 0.3em 0.75em;
+  border-radius: 4px;
+}
+
+.cta-button {
+  background-color: #bb86fc;
+  color: #000;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 @media (max-width: 600px) {
