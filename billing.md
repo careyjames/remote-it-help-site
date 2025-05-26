@@ -10,12 +10,13 @@ We follow clear policies for our remote IT support services.
 ## Remote Support Rate
 
 * **Base Rate:** $275 per hour.
-* **Minimum Charge:** There is a 30-minute minimum charge for all remote/phone support sessions.
-* **Billing Increments:** After the 30-minute minimum, we bill in 15-minute increments.
+* **Minimum Charge:** There is a **30-minute minimum** charge for all remote/phone support sessions.
+* **Billing Increments:** After the 30-minute minimum, we bill precisely in **1-minute increments**, based on call/session timers or time tracked for offline tasks.
 
 ## Payment Policy
 
-* **Method:** We require a valid credit card on file before services are rendered. Billing occurs automatically, typically daily, to the authorized card.
+* **Method:** We require a valid credit card on file before services are rendered.
+* **Billing Cycle:** Billing occurs automatically **at the end of each session or day's work** to the authorized card on file.
 * **Terms:** We do not accept checks or offer net payment terms. **No card, no service—no exceptions.**
 
 ## Scheduling & Cancellation Policy
@@ -39,10 +40,10 @@ We follow clear policies for our remote IT support services.
 
 ## Business Ethics: Carey’s Promise 🧑‍🔬
 
-As the Founder of IT Help San Diego Inc., I see my role as a scientist, not a salesperson. My recommendations are based on transparent, verifiable data, not opinions or distributor deals. That’s why we don’t sell any products—only our time. You’ll never see me push hardware for an affiliate fee. Instead, I show you the raw specs so you can make the best choice for your needs. My focus is always on your long-term reliability—truly listening so I can help you understand exactly what you want—and delivering real value. I’ve always stayed true to my ethics: no price gouging, no hidden fees, and no cutting corners on quality.
+As the Founder of IT Help San Diego Inc., I see my role as a scientist, not a salesperson. My recommendations are based on transparent, verifiable data, not opinions or distributor deals. **We don't sell products, and we don't accept commissions, affiliate fees, or kickbacks.** If we recommend a solution, whether it's Cloudflare, SentinelOne, or 1Password, it's because we believe it's the best tool for the job. We'll show you the options, explain the *why*, and you'll typically purchase directly from the vendor. Our only revenue comes from our time and expertise dedicated to implementing these solutions effectively for you. My focus is always on your long-term reliability—truly listening so I can help you understand exactly what you want—and delivering real value.
 
 ## Final Notes
 
 Our expertise covers Mac, Linux, Windows, enterprise networking, and high-end tech solutions, delivered remotely. We provide discreet cyber-security and crisis response services, backed by nearly two decades of hands-on experience.
 
-**YOUR TECH PROBLEMS ARE ABOUT TO DISAPPEAR.** 🚀
+<p class="final-tagline">YOUR TECH PROBLEMS ARE ABOUT TO DISAPPEAR. 🚀</p>
