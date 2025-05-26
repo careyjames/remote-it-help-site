@@ -33,18 +33,21 @@ main h1:first-child {
 
 main {
   margin-top: 2rem;
-  padding-bottom: 4rem; /* Add padding to push footer down a bit */
+  padding-bottom: 4rem; 
 }
 
 footer {
   margin-top: 2rem;
   padding-top: 1rem; 
-  /* background-color: #161b22; */ /* Removed background color */
   text-align: center; 
-  clear: both; /* Ensure it clears any floats */
-  position: relative; /* Ensure standard positioning */
+  clear: both; 
+  position: relative; 
   bottom: 0;
   width: 100%;
+}
+
+footer p { /* Ensure footer p is centered */
+    margin: 0 auto;
 }
 
 .cta-button {
@@ -65,11 +68,19 @@ footer {
 @media (max-width: 600px) {
   header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-start; /* Align header items to the start (left) */
   }
 
   nav ul {
     flex-direction: column;
+    align-items: flex-start; /* Align nav items to the start (left) */
+    width: 100%; /* Ensure nav takes full width */
+    padding-left: 0; /* Remove default padding */
+  }
+
+  nav li {
+      margin-right: 0; /* Remove right margin on mobile */
+      margin-bottom: 0.5rem; /* Add some space between stacked links */
   }
 
   .cta-button {
