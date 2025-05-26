@@ -58,15 +58,16 @@ Stay up to date and have an antivirus program installed.
 **What is the best endpoint protection for Mac Cybersecurity Threats?**
 * **CrowdStrike:** If you can afford them (at least $1200.00 per year for five computers). Crowdstrike is the most advanced and complete protection we have tested, and it is able to protect against nation-state-level attacks. This lightweight program protects your Mac and usually never bothers you until the day it's saving your life. (The executive assistant director of the criminal, cyber, response, and service branch of the FBI, after 24 years, was named president of CrowdStrike Services, Shawn Henry.)
 * **SentinelOne:** Its AI-powered security platform is used by some of the world's largest and most security-conscious organizations, including Fortune 500 companies, government agencies, and financial institutions. It is trusted to protect against the most sophisticated cyber threats, including ransomware, zero-day attacks, and nation-state-sponsored attacks.
-* Or, as the **minimum level of protection**, we would want any client to have **Malwarebytes Premium** for $40 per year per user.
+* Or, as the **minimum level of protection**, we would want any client to have **ThreatDown by Malwarebytes*.
 All are American-based companies.
 
-**What is the best way to protect my company's email users?**
+**What is the best way to protect my company’s email users?**
 * Update DNS Records! (As discussed in our other blog post).
-* **Perception Point:** Sits before your Google Workspace or Microsoft 365 Exchange provider, stops evil, reduces spam, and helps your email and domain rating.
-* **Mail Hardener, EasyDmarc, or RedSift:** Great tools to help you get an A+ email quality rating and protect your users from attacks.
+* **ProofPoint or Perception Point:** Sits before your Google Workspace or Microsoft 365 Exchange provider, stops evil, reduces spam.
+* **RedSift and Mail Hardener are Great tools for achieving an A+ email quality rating and protecting and monitoring your users from attacks.
 
 **What can protect my iPhone from being hacked?**
+* **Apple’s Lockdown Mode:**
 * **Zimperium:** The best and only fully functioning mobile Security product for iOS and iPadOS that we have tested. (DOD contract; ask the US Department of Defense). When we read about a horrible attack that hit iPhone users, we remember the early morning email from Zimperium saying, "We got you, don't worry," usually naming the virus before you even hear about it on the news.
 
 Contact us today to benefit from our Mac expertise if you need cybersecurity advice!
