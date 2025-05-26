@@ -14,7 +14,7 @@ kramdown:
   input: GFM
 
 # Permalink settings (optional, based on your structure)
-permalink: pretty
+permalink: /:name.html
 
 # Exclude files from the final build (e.g., any markdown files not to be processed)
 exclude:
