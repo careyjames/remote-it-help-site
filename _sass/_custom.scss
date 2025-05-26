@@ -53,10 +53,6 @@ main h1:first-child {
   }
 }
 
-/* Mode toggle placeholder - ensure no absolute positioning if present */
-#mode-toggle {
-  position: static;
-}
 
 .container {
   width: 90%;
