@@ -4,22 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | {{ site.title }}</title>
-
-    <!-- Link to main stylesheet -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "{{ site.title }}",
+        "url": "{{ site.url }}",
+        "description": "{{ site.description }}",
+        "publisher": {
+          "@type": "Organization",
+          "name": "IT Help San Diego Inc.",
+          "url": "https://it-help.tech",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://it-help.tech/logo.png" 
+          }
+        }
+      }
+      </script>
   </head>
-
   <body>
     <header class="container">
-      <h1>{{ site.title }}</h1>
+      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a> 🚀</h1>
       <nav>
         <ul>
-          <li><a href="{{ '/' | relative_url }}">Home</a></li>
-          <li><a href="{{ '/services.html' | relative_url }}">Services</a></li>
+          <li><a href="{{ '/' | relative_url }}">Home 🏠</a></li>
+          <li><a href="{{ '/services.html' | relative_url }}">Services 🛠️</a></li>
         </ul>
       </nav>
-      <a href="https://schedule.it-help.tech/" class="cta-button">Book now</a>
+      <a href="https://schedule.it-help.tech/" class="cta-button">Book Now 📅</a>
     </header>
 
     <main class="container">
@@ -27,7 +41,7 @@
     </main>
 
     <footer class="container">
-      <p>Copyright © {{ site.time | date: '%Y' }}</p>
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. A service by <a href="https://it-help.tech">IT Help San Diego Inc.</a></p>
     </footer>
   </body>
 </html>
