@@ -88,36 +88,63 @@ footer p {
 @media (max-width: 600px) {
   header {
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
+    padding: 0.5rem 1rem; /* Tighter padding on mobile */
+    gap: 0.5rem;          /* Tighter gap on mobile */
+  }
+
+  header h1 {
+      margin: 0;
+      font-size: 1.2em; /* Smaller H1 text on mobile */
+      line-height: 1.1; /* Tighter line height */
+  }
+
+  header h1 a {
+     display: flex; /* Make the link a flex container */
+     flex-direction: column; /* Stack logo and text */
+     align-items: center;    /* Center them */
+     gap: 0.3rem;            /* Small gap between logo and text */
+     text-decoration: none;
+     color: inherit;
+  }
+
+  header h1 img {
+    height: 40px; /* MUCH smaller logo height for mobile */
+    width: 131px; /* Adjusted width (40 * 3.27) */
+    margin-right: 0; /* Remove right margin when stacked */
   }
 
   nav ul {
     flex-direction: column;
-    align-items: center; 
-    width: 100%; 
-    padding-left: 0; 
+    align-items: center;
+    width: 100%;
+    padding-left: 0;
+    gap: 0; /* Remove extra gap in nav */
   }
 
   nav li {
-      margin-right: 0; 
-      margin-bottom: 0.5rem; 
-      width: 100%; 
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+      width: 100%;
   }
 
   nav li a {
-      display: block; 
-      text-align: center; 
+      display: block;
+      text-align: center;
+      padding: 0.4rem; /* Add some padding to make links easier to tap */
   }
 
   .cta-button {
-    display: block; /* Make button full-width */
-    width: 100%; /* Ensure it spans the container */
-    text-align: center; /* Center text within the button */
-    align-self: auto; /* Let it follow normal flow (don't force center) */
-    left: auto; /* Remove any previous 'left' nudge */
+    display: block;
+    width: 100%;
+    text-align: center;
+    align-self: auto;
+    left: auto;
+    padding: 0.8em 1em; /* Make button a bit taller for tapping */
+    margin-top: 0.5rem; /* Ensure some margin */
   }
 
-  /* * REMOVED: .button-icon { display: none; } 
+  /* * REMOVED: .button-icon { display: none; }
    * Now the icon will show on mobile again.
    */
 }
