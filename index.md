@@ -25,4 +25,4 @@ Are you having trouble with your email or website? We can help ensure that your 
 
 Navigate the complexities of DNS management and ensure critical business emails reach the inbox with IT Help San Diego’s expert in email deliverability and security. We specialize in configuring SPF, DKIM, DMARC, and BIMI records to protect your brand, prevent spoofing, and comply with new sender requirements from Google and Yahoo. If you’re facing issues with emails going to spam or email rejection, we provide advanced troubleshooting and architect security-compliant DNS solutions.
 
-Remember, if your DMARC says `p=none`, your work’s not done! 🧑‍💻
+Remember, if your DMARC says <span class="dmarc-tag">p=none</span>, your work’s not done! 🧑‍💻
