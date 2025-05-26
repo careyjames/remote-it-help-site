@@ -57,6 +57,7 @@ footer.container {
 footer p { 
     margin: 0 auto; /* Center the paragraph text */
     text-align: center;
+    padding-bottom: 0.5rem; /* Add a bit of space between footer lines */
 }
 
 .cta-button {
@@ -102,4 +103,12 @@ footer p {
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
+}
+
+/* Style for the footer brag line */
+.footer-brag {
+  font-size: 0.85em; /* Make it a bit smaller */
+  color: #8b949e; /* Use the muted color like the ASCII art */
+  font-style: italic;
+  margin-top: 0.5rem; /* Space it from the copyright */
 }
