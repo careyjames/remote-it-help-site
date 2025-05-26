@@ -1,21 +1,29 @@
 /* _darkmode.scss */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #333; /* Dark gray background */
-  color: #ffffff;
-  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: "Courier New", monospace;
   margin: 0;
   padding: 0;
 }
 
 a {
-  color: #BB86FC;
+  color: #8ab4f8;
 }
 
 header,
 footer {
-  background-color: #444; /* Slightly lighter dark background for header/footer */
-  color: #ffffff;
-  padding: 1em;
+  background-color: transparent; /* remove heavy bars */
+  color: #e0e0e0;
+  padding: 1rem 0;
+}
+
+footer {
+  margin-top: 2rem; /* keep footer from covering content */
 }
 
 nav ul {
@@ -26,12 +34,18 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 1rem;
 }
 
 nav a {
   text-decoration: none;
-  color: #BB86FC;
+  color: #8ab4f8;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 @media (max-width: 600px) {
