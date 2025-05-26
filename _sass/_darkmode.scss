@@ -4,21 +4,39 @@
 }
 
 body {
-  background-color: #0d1117; /* Darker background */
-  color: #c9d1d9; /* Lighter text */
+  background-color: #0d1117; 
+  color: #c9d1d9; 
   font-family: "Courier New", monospace;
   margin: 0;
   padding: 0;
 }
 
 a {
-  color: #58a6ff; /* Lighter blue links */
+  color: #58a6ff; 
 }
+
+h1 {
+ color: #39d353; /* Vibrant Green */
+}
+
+h2 {
+ color: #58a6ff; /* Vibrant Blue */
+}
+
+header h1 a { /* Ensure header title link stays blue */
+  color: #58a6ff;
+  text-decoration: none;
+}
+
 
 header,
 footer {
   color: #c9d1d9;
   padding: 1rem 0;
+}
+
+footer { /* Remove padding added in custom.scss */
+    padding: 1rem;
 }
 
 nav ul {
@@ -47,12 +65,11 @@ nav a {
   }
 }
 
-/* Add some nerdy ASCII art to the footer */
 footer::before {
   content: "  /\\_/\\  \A ( o.o ) \A  > ^ <  ";
   display: block;
   white-space: pre;
   text-align: center;
   margin-bottom: 1rem;
-  color: #8b949e; /* Muted color */
+  color: #8b949e; 
 }
