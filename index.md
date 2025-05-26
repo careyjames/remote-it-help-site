@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-# Welcome to Remote IT Help 🛡️
+# Remote IT Help 🛡️
 
 We provide expert remote IT troubleshooting and infrastructure support.
 
