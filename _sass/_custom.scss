@@ -136,3 +136,56 @@ footer p {
   font-style: italic;
   margin-top: 0.5rem; 
 }
+
+/* Blog Post List Styling */
+.post-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.post-list li {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #30363d; /* Subtle separator */
+}
+
+.post-list li:last-child {
+  border-bottom: none;
+}
+
+.post-list h2 a {
+  text-decoration: none;
+  color: #8ab4f8; /* Link blue */
+}
+
+.post-list h2 a:hover {
+  text-decoration: underline;
+}
+
+.post-meta {
+  font-size: 0.9em;
+  color: #8b949e; /* Muted text color */
+  margin-bottom: 0.5rem;
+}
+
+.post-excerpt {
+  margin-bottom: 1rem;
+}
+
+a.read-more {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Single Post Styling */
+.post h1 {
+  margin-bottom: 0.5rem;
+}
+
+.post .post-meta {
+  margin-bottom: 2rem;
+}
+
+.post-content h2, .post-content h3, .post-content h4 {
+  margin-top: 2rem;
+}
