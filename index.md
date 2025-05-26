@@ -28,7 +28,7 @@ title: Home - Expert Remote IT Support for Complex Tech Challenges
 }
 </script>
 
-# Welcome to Remote IT Help 🛡️
+# Remote IT Help 🛡️
 
 Your tech problems are about to disappear. We deliver concierge-level remote tech help nationwide, backed by 25+ years of expert IT support experience, specializing in Mac, iOS, DNS, email deliverability, and cybersecurity.
 
