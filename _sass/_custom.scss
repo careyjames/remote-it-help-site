@@ -77,6 +77,12 @@ footer p {
   color: #0d1117;
 }
 
+/* Hide button icon on mobile */
+.button-icon {
+    display: inline; /* Show by default */
+}
+
+
 @media (max-width: 600px) {
   header {
     flex-direction: column;
@@ -93,17 +99,20 @@ footer p {
   nav li {
       margin-right: 0; 
       margin-bottom: 0.5rem; 
-      width: 100%; /* Make each LI take full width */
-      /* text-align: center; */ /* Remove text-align here */
+      width: 100%; 
   }
 
   nav li a {
-      display: block; /* Make link full width */
-      text-align: center; /* Center text *within* the full-width link */
+      display: block; 
+      text-align: center; 
   }
 
   .cta-button {
     align-self: center; 
+  }
+
+  .button-icon {
+      display: none; /* Hide icon on mobile */
   }
 }
 
