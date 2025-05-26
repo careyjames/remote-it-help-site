@@ -6,8 +6,8 @@ header {
   flex-direction: column; /* Stack elements vertically */
   align-items: center;   /* Center elements horizontally */
   text-align: center;    /* Center text within elements */
-  gap: 1rem;             /* Keep some space between elements */
-  padding: 1rem;
+  gap: 0.5rem;           /* REDUCED from 1rem */
+  padding: 0.5rem 1rem;  /* REDUCED vertical padding (top/bottom), kept horizontal */
   width: 100%;
   float: none;
   margin-bottom: 0;
