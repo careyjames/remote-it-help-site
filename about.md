@@ -36,7 +36,7 @@ title: About Carey Balboa & Remote IT Help
 
 # About Carey Balboa 🧑‍🔬
 
-![Carey Balboa, Founder of Remote IT Help, with his service animal Tango.](/assets/images/carey-balboa.jpeg){: width="400" loading="lazy" style="float: right; margin-left: 15px; margin-bottom: 15px;" }
+![Carey Balboa, Founder of Remote IT Help, with his service animal Tango.](/assets/images/carey-balboa.jpeg){: width="200" loading="lazy" style="float: right; margin-left: 15px; margin-bottom: 15px;" }
 
 Hi, I’m Carey Balboa.
 *(Carey: Like the Hawksbill Sea Turtle (Eretmochelys imbricata) Common Name: Carey)*
