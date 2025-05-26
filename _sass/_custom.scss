@@ -79,9 +79,9 @@ footer p {
   color: #0d1117;
 }
 
-/* Hide button icon on mobile */
+/* Ensure button icon shows by default */
 .button-icon {
-    display: inline; /* Show by default */
+    display: inline; 
 }
 
 
@@ -117,9 +117,9 @@ footer p {
     left: auto; /* Remove any previous 'left' nudge */
   }
 
-  .button-icon {
-      display: none; /* Hide icon on mobile */
-  }
+  /* * REMOVED: .button-icon { display: none; } 
+   * Now the icon will show on mobile again.
+   */
 }
 
 
