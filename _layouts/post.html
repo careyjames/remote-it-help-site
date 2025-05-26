@@ -2,6 +2,37 @@
 layout: default
 ---
 <article class="post">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": {{ page.title | jsonify }},
+    "author": {
+      "@type": "Person",
+      "name": {{ page.author | default: site.title | jsonify }}
+    },
+    "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+    {% if page.last_modified_at %}
+      "dateModified": {{ page.last_modified_at | date_to_xmlschema | jsonify }},
+    {% else %}
+      "dateModified": {{ page.date | date_to_xmlschema | jsonify }},
+    {% endif %}
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ page.url | absolute_url | jsonify }}"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": {{ site.title | jsonify }},
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ '/assets/images/logo.png' | absolute_url | jsonify }}" // Assuming you might add a logo later
+      }
+    },
+    "description": {{ page.excerpt | strip_html | strip_newlines | truncate: 160 | jsonify }}
+  }
+  </script>
+
   <h1>{{ page.title }}</h1>
   <p class="post-meta">
     <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
