@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #0d1117; 
+  background-color: #161b22; /* Slightly Lighter Dark Background */
   color: #c9d1d9; 
   font-family: "Courier New", monospace;
   margin: 0;
@@ -16,7 +16,7 @@ a {
 }
 
 h1 {
- color: #3CB371; /* New Unified Classy Green */
+ color: #2EA043; /* NEW Unified High-Tech Green */
 }
 
 h2 {
@@ -99,8 +99,7 @@ footer::before {
 .final-tagline {
   font-size: 1.2em; /* Make it slightly larger */
   font-weight: bold;
-  color: #3CB371; /* New Unified Classy Green */
+  color: #2EA043; /* NEW Unified High-Tech Green */
   text-transform: uppercase;
   margin-top: 2rem; /* Add some space above it */
-  /* text-shadow: 0 0 5px rgba(60, 179, 113, 0.5); */ /* Removing shadow for a cleaner look */
 }
