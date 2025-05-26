@@ -23,7 +23,6 @@ h2 {
  color: #58a6ff; /* Vibrant Blue */
 }
 
-/* Style for H3 tags globally */
 h3 {
   color: #58a6ff; /* Vibrant Blue, same as H2 */
 }
@@ -33,9 +32,13 @@ header h1 a {
   text-decoration: none;
 }
 
-/* Make list item titles (bold text) pop */
 li strong {
-  color: #e6edf3; /* Brighter white/grey */
+  color: #e6edf3; /* Brighter white/grey for bold text in lists */
+}
+
+strong { /* General bold text if not in a list, can be same as body or slightly brighter */
+    font-weight: bold; /* Default browser bold is usually fine */
+    /* color: #e0e0e0; */ /* Optional: if you want all bold text slightly brighter */
 }
 
 
@@ -84,7 +87,7 @@ footer::before {
   color: #8b949e; 
 }
 
-/* Style for p=none tag */
+/* Style for p=none tag and similar tags */
 .dmarc-tag {
   background-color: #c9d1d9; /* Light background */
   color: #0d1117; /* Dark text */
@@ -98,6 +101,20 @@ footer::before {
 .ethics-statement {
   color: #8ab4f8; /* Use the bright blue for emphasis */
   font-weight: bold;
+}
+
+/* Style for specific highlighted features in text */
+.highlight-feature {
+  color: #8ab4f8; /* Use the bright blue for emphasis */
+  font-weight: bold;
+}
+
+/* Style for org subtitle on about page */
+.org-subtitle {
+  color: #aab0b6; /* A slightly brighter grey, but still subtle */
+  font-style: italic;
+  font-size: 0.9em;
+  margin-top: 1em;
 }
 
 /* Style for the final tagline */
