@@ -3,15 +3,15 @@ layout: default
 title: Services
 ---
 
-# Our Services
+# Our Remote IT Services
 
-We offer a range of IT support solutions to keep your business running smoothly.
+We offer specialized remote IT support solutions focused on infrastructure, security, and troubleshooting:
 
-- Email migration and setup
-- DNS and domain management
-- Advanced email deliverability troubleshooting
-- Security compliance and DMARC implementations
-- Mac mail configuration and support
-- Website and domain recovery
+-   Email migration and setup
+-   Advanced DNS and domain management (including DNSSEC)
+-   Deep-dive email deliverability troubleshooting
+-   Security compliance and DMARC implementations (SPF, DKIM, BIMI)
+-   Mac mail configuration and remote support
+-   Website infrastructure and domain recovery
 
-Need help right away? [Book now](https://schedule.it-help.tech/).
+Need expert help right away? [Book now](https://schedule.it-help.tech/).
