@@ -11,7 +11,6 @@ header {
   width: 100%;
   float: none;
   margin-bottom: 0;
-  /* border-bottom: 1px solid #30363d; */ /* Removed this line */
 }
 
 header h1 {
@@ -34,14 +33,18 @@ main h1:first-child {
 
 main {
   margin-top: 2rem;
+  padding-bottom: 4rem; /* Add padding to push footer down a bit */
 }
 
 footer {
   margin-top: 2rem;
-  padding-top: 1rem; /* Add some padding */
-  /* border-top: 1px solid #30363d; */ /* Removed this line */
-  background-color: #161b22; /* Slightly different background for footer */
-  text-align: center; /* Center footer text */
+  padding-top: 1rem; 
+  /* background-color: #161b22; */ /* Removed background color */
+  text-align: center; 
+  clear: both; /* Ensure it clears any floats */
+  position: relative; /* Ensure standard positioning */
+  bottom: 0;
+  width: 100%;
 }
 
 .cta-button {
