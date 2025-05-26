@@ -1,10 +1,20 @@
 /* Custom styles */
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
- main
+  gap: 1rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+main h1:first-child {
+  margin-top: 0;
 }
 
 .cta-button {
@@ -15,18 +25,16 @@ header {
   border-radius: 4px;
   text-decoration: none;
   margin-top: 0.5em;
- main
 }
 
 @media (max-width: 600px) {
   header {
     flex-direction: column;
- main
+    align-items: flex-start;
   }
 
   nav ul {
     flex-direction: column;
-main
   }
 }
 
