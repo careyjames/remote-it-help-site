@@ -28,6 +28,11 @@ header h1 a {
   text-decoration: none;
 }
 
+/* Make list item titles (bold text) pop */
+li strong {
+  color: #e6edf3; /* Brighter white/grey */
+}
+
 
 header,
 footer {
