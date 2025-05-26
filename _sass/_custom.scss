@@ -62,8 +62,8 @@ footer p {
 
 .cta-button {
   display: inline-block;
-  background-color: #238636; 
-  color: #fff;
+  background-color: #3CB371; /* New Unified Classy Green */
+  color: #fff; /* Keep text white for contrast */
   padding: 0.5em 1em;
   border-radius: 4px;
   text-decoration: none;
@@ -72,7 +72,7 @@ footer p {
 }
 
 .cta-button:hover {
-  background-color: #2ea043; 
+  background-color: #46a070; /* Slightly darker/desaturated green for hover */
 }
 
 @media (max-width: 600px) {
