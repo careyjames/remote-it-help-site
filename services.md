@@ -3,6 +3,146 @@ layout: default
 title: Remote IT Services & Expert Solutions
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Remote IT Services Offered",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Service",
+        "name": "Email Migration & Setup",
+        "description": "Expert assistance with email system migrations (e.g., to Google Workspace) and comprehensive setup & troubleshooting.",
+        "provider": { "@type": "Organization", "name": "Remote IT Help" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Service",
+        "name": "Mac & iOS Mail Support",
+        "description": "Specialized configuration and remote troubleshooting for Apple Mail on macOS and iOS.",
+        "provider": { "@type": "Organization", "name": "Remote IT Help" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Service",
+        "name": "Advanced DNS Management",
+        "description": "Precision edits and strategic configuration for MX, SPF, DKIM, DMARC, DNSSEC, and BIMI records.",
+        "provider": { "@type": "Organization", "name": "Remote IT Help" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Service",
+        "name": "DMARC & Email Security Implementation",
+        "description": "Architecting bulletproof, security-compliant DNS solutions with robust DMARC (p=reject) implementations.",
+        "provider": { "@type": "Organization", "name": "Remote IT Help" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Service",
+        "name": "Website & Domain Recovery",
+        "description": "Assisting you in regaining access and control over your website and domain names.",
+        "provider": { "@type": "Organization", "name": "Remote IT Help" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@type": "Service",
+        "name": "Endpoint Security",
+        "description": "Remote setup and management of leading endpoint protection for macOS, Windows, and Linux.",
+        "provider": { "@type": "Organization", "name": "Remote IT Help" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+        "@type": "Service",
+        "name": "Mobile Device Security (iOS)",
+        "description": "Advising on best practices and tools to secure your iPhones and iPads.",
+        "provider": { "@type": "Organization", "name": "Remote IT Help" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+        "@type": "Service",
+        "name": "Data Privacy & Discreet Advisory",
+        "description": "Handling sensitive technical challenges requiring expertise, discretion, and trust.",
+        "provider": { "@type": "Organization", "name": "Remote IT Help" }
+      }
+    },
+     {
+      "@type": "ListItem",
+      "position": 9,
+      "item": {
+        "@type": "Service",
+        "name": "Mac Performance & Troubleshooting",
+        "description": "Addressing macOS software issues, iCloud problems, storage warnings, and performance concerns.",
+        "provider": { "@type": "Organization", "name": "Remote IT Help" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "item": {
+        "@type": "Service",
+        "name": "Apple Time Machine Backups",
+        "description": "Setup, troubleshooting, and ensuring your backup strategy is sound.",
+        "provider": { "@type": "Organization", "name": "Remote IT Help" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "item": {
+        "@type": "Service",
+        "name": "Cloud Storage Solutions",
+        "description": "Remote setup, troubleshooting, and advice on services like Dropbox.",
+        "provider": { "@type": "Organization", "name": "Remote IT Help" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "item": {
+        "@type": "Service",
+        "name": "Disaster Recovery Planning",
+        "description": "Helping you prepare for and recover from data loss scenarios remotely.",
+        "provider": { "@type": "Organization", "name": "Remote IT Help" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "item": {
+        "@type": "Service",
+        "name": "iPhone Text Message Extraction for Law Firms",
+        "description": "Remote extraction of iPhone text messages for legal professionals, creating court-admissible reports.",
+        "provider": { "@type": "Organization", "name": "Remote IT Help" }
+      }
+    }
+  ]
+}
+</script>
+
 # Our Remote IT Services 🛠️
 
 We offer specialized remote IT support solutions focused on robust infrastructure, advanced security, and deep-dive troubleshooting. Our expertise ensures your critical systems run smoothly, securely, and efficiently, no matter where you are.
