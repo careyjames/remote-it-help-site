@@ -16,14 +16,14 @@ a {
 }
 
 h1 {
- color: #28a745; /* New Professional Green */
+ color: #228B22; /* New Deep Forest Green */
 }
 
 h2 {
  color: #58a6ff; /* Vibrant Blue */
 }
 
-header h1 a { /* Ensure header title link stays blue */
+header h1 a { 
   color: #58a6ff;
   text-decoration: none;
 }
@@ -35,7 +35,7 @@ footer {
   padding: 1rem 0;
 }
 
-footer { /* Remove padding added in custom.scss */
+footer {
     padding: 1rem;
 }
 
@@ -66,10 +66,20 @@ nav a {
 }
 
 footer::before {
-  content: "  /\\_/\\  \A ( o.o ) \A  > ^ <  ";
+  content: "     \\ \A      \\\\_ \A     (o o) \A    /===\\\  \A   //| |(\\) \A   '*' '*''"; /* Unicorn ASCII Art */
   display: block;
   white-space: pre;
   text-align: center;
   margin-bottom: 1rem;
   color: #8b949e; 
+}
+
+/* Style for p=none tag */
+.dmarc-tag {
+  background-color: #c9d1d9; /* Light background */
+  color: #0d1117; /* Dark text */
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
 }
