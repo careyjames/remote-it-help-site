@@ -144,9 +144,10 @@ footer p {
     margin-top: 0.5rem; /* Ensure some margin */
   }
 
-  /* * REMOVED: .button-icon { display: none; }
-   * Now the icon will show on mobile again.
-   */
+  footer .service-line {
+    display: block; /* This forces it onto a new line */
+    margin-top: 0.3em; /* Optional: Adds a little space between the lines */
+  }
 }
 
 
