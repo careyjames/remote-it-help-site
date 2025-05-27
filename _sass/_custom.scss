@@ -37,7 +37,6 @@ header h1 {
   padding: 10px; // Increase tap area
   width: 45px; /* Fixed width */
   height: 45px; /* Fixed height */
-  /* display: flex;  <-- REMOVED THIS LINE TO FIX DUPLICATE */
   align-items: center;
   justify-content: center;
 }
@@ -122,7 +121,7 @@ footer.container {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    text-align: center;
+    text-aign: center;
 }
 
 footer p {
@@ -162,7 +161,7 @@ footer p {
   }
 
   .nav-toggle-label {
-    display: flex; // Show the label on mobile (This is correct)
+    display: flex; // Show the label on mobile
   }
 
   nav {
@@ -211,7 +210,7 @@ footer p {
   }
 
   main {
-      margin-top: 3rem; /* Add more space on mobile */
+      margin-top: 4rem; /* Increased to 4rem for more space on mobile */
   }
 
   .cta-button {
