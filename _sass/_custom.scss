@@ -31,13 +31,13 @@ header h1 {
 }
 
 .nav-toggle-label {
-  display: none; // Hidden by default, shown on mobile
+  display: none; // Hidden by default, shown on mobile via @media
   cursor: pointer;
   z-index: 1000;
   padding: 10px; // Increase tap area
   width: 45px; /* Fixed width */
   height: 45px; /* Fixed height */
-  display: flex;
+  /* display: flex;  <-- REMOVED THIS LINE TO FIX DUPLICATE */
   align-items: center;
   justify-content: center;
 }
@@ -162,7 +162,7 @@ footer p {
   }
 
   .nav-toggle-label {
-    display: flex; // Show the label on mobile
+    display: flex; // Show the label on mobile (This is correct)
   }
 
   nav {
