@@ -104,7 +104,7 @@ main h1:first-child {
 }
 
 main {
-  margin-top: 2rem;
+  margin-top: 2rem; /* Default for desktop */
   padding-bottom: 0.1rem;
 }
 
@@ -210,6 +210,10 @@ footer p {
       background-color: #30363d; // Hover effect
   }
 
+  main {
+      margin-top: 3rem; /* Add more space on mobile */
+  }
+
   .cta-button {
     display: block;
     width: 100%;
@@ -247,7 +251,7 @@ footer p {
     width: auto;
   }
 
-  nav li {
+   nav li {
       width: auto;
       border-bottom: none;
   }
