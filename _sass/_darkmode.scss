@@ -99,15 +99,6 @@ nav a {
   }
 }
 
-footer::before {
-  content: "   .-.   \A  (o.o)  \A  |\\_/|  \A //`_`\\\\ \A_\\_/_\\_"; /* Owl of Athena ASCII Art */
-  display: block;
-  white-space: pre;
-  text-align: center;
-  margin-bottom: 1rem;
-  color: #8b949e;
-}
-
 /* Style for p=none tag and similar tags */
 .dmarc-tag {
   background-color: #c9d1d9; /* Light background */
