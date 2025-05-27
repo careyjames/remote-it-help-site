@@ -35,6 +35,7 @@ main h1:first-child {
 main {
   margin-top: 2rem;
   padding-bottom: 0.1rem;
+  padding-top: 0; /* Ensure no padding */
 }
 
 footer {
@@ -79,75 +80,147 @@ footer p {
   color: #0d1117;
 }
 
-/* Ensure button icon shows by default */
 .button-icon {
     display: inline;
 }
 
+/* Base styles for hamburger elements (hidden by default) */
+.nav-toggle {
+  display: none;
+}
+.nav-toggle-label {
+  display: none;
+}
+
 
 @media (max-width: 600px) {
+  /* --- START: Mobile Header & Nav Overrides --- */
+
   header {
-    flex-direction: column;
+    flex-direction: row; /* Change to row */
+    justify-content: space-between; /* Logo left, hamburger right */
     align-items: center;
-    padding: 0.5rem 1rem; /* Tighter padding on mobile */
-    gap: 0.5rem;          /* Tighter gap on mobile */
+    padding: 1rem; /* Consistent padding */
+    gap: 1rem;
+    position: relative; /* Essential for absolute nav */
+    text-align: left; /* Align H1 left */
   }
 
   header h1 {
       margin: 0;
-      font-size: 1.2em; /* Smaller H1 text on mobile */
-      line-height: 1.1; /* Tighter line height */
+      font-size: 1.2em;
+      line-height: 1.2;
   }
 
   header h1 a {
-     display: flex; /* Make the link a flex container */
-     flex-direction: column; /* Stack logo and text */
-     align-items: center;    /* Center them */
-     gap: 0.3rem;            /* Small gap between logo and text */
+     display: flex;
+     flex-direction: row; /* Keep as row */
+     align-items: center;
+     gap: 0.5rem;
      text-decoration: none;
      color: inherit;
   }
 
   header h1 img {
-    height: 40px; /* MUCH smaller logo height for mobile */
-    width: 131px; /* Adjusted width (40 * 3.27) */
-    margin-right: 0; /* Remove right margin when stacked */
+    height: 40px;
+    width: auto; /* Let it scale */
+    margin-right: 0;
+  }
+
+  /* Show and style the hamburger label */
+  .nav-toggle-label {
+    display: block; /* Make it visible */
+    cursor: pointer;
+    z-index: 1000;
+    padding: 10px;
+  }
+
+  .nav-toggle-label span,
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    display: block;
+    background-color: #c9d1d9;
+    height: 3px;
+    width: 25px;
+    border-radius: 2px;
+    position: relative;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+  }
+
+  .nav-toggle-label span::before { top: -8px; }
+  .nav-toggle-label span::after { top: 8px; }
+
+  /* Hide original nav, style it as dropdown */
+  nav {
+    display: none; /* Hide nav container by default */
+    position: absolute;
+    top: 100%; /* Below header */
+    left: 0;
+    width: 100%;
+    background-color: #161b22;
+    z-index: 999;
   }
 
   nav ul {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Stack links vertically */
     width: 100%;
-    padding-left: 0;
-    gap: 0; /* Remove extra gap in nav */
+    padding: 0;
+    gap: 0;
   }
 
   nav li {
       margin-right: 0;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0; /* Remove bottom margin */
       width: 100%;
+      border-bottom: 1px solid #30363d; /* Add separator */
   }
+   nav li:last-child {
+      border-bottom: none;
+   }
 
   nav li a {
       display: block;
       text-align: center;
-      padding: 0.4rem; /* Add some padding to make links easier to tap */
+      padding: 1rem; /* Increase tap area */
   }
 
+  /* Show nav when checkbox is checked */
+  #nav-toggle:checked ~ nav {
+    display: block;
+  }
+
+  /* Transform hamburger to X when checked */
+  #nav-toggle:checked ~ .nav-toggle-label span { background-color: transparent; }
+  #nav-toggle:checked ~ .nav-toggle-label span::before { transform: rotate(45deg); top: 0; }
+  #nav-toggle:checked ~ .nav-toggle-label span::after { transform: rotate(-45deg); top: 0; }
+
+  /* Mobile Spacing */
+  main {
+    margin-top: 3rem; /* Increase margin-top only for mobile */
+    padding-top: 0; /* Ensure no padding */
+  }
+
+  /* Keep other mobile styles */
   .cta-button {
     display: block;
     width: 100%;
     text-align: center;
-    align-self: auto;
-    left: auto;
-    padding: 0.8em 1em; /* Make button a bit taller for tapping */
-    margin-top: 0.5rem; /* Ensure some margin */
+    padding: 0.8em 1em;
+    margin-top: 0.5rem;
   }
 
   footer .service-line {
-    display: block; /* This forces it onto a new line */
-    margin-top: 0.3em; /* Optional: Adds a little space between the lines */
+    display: block;
+    margin-top: 0.3em;
   }
+
+  /* --- END: Mobile Header & Nav Overrides --- */
 }
 
 
@@ -157,7 +230,6 @@ footer p {
   margin: 0 auto;
 }
 
-/* Style for the footer brag line */
 .footer-brag {
   font-size: 0.85em;
   color: #8b949e;
@@ -165,7 +237,6 @@ footer p {
   margin-top: 0.5rem;
 }
 
-/* Blog Post List Styling */
 .post-list {
   list-style: none;
   padding-left: 0;
@@ -174,7 +245,7 @@ footer p {
 .post-list li {
   margin-bottom: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #30363d; /* Subtle separator */
+  border-bottom: 1px solid #30363d;
 }
 
 .post-list li:last-child {
@@ -183,7 +254,7 @@ footer p {
 
 .post-list h2 a {
   text-decoration: none;
-  color: #8ab4f8; /* Link blue */
+  color: #8ab4f8;
 }
 
 .post-list h2 a:hover {
@@ -192,7 +263,7 @@ footer p {
 
 .post-meta {
   font-size: 0.9em;
-  color: #8b949e; /* Muted text color */
+  color: #8b949e;
   margin-bottom: 0.5rem;
 }
 
@@ -205,7 +276,6 @@ a.read-more {
   text-decoration: none;
 }
 
-/* Single Post Styling */
 .post h1 {
   margin-bottom: 0.5rem;
 }
