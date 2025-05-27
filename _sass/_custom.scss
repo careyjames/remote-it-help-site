@@ -1,14 +1,16 @@
 /* Custom styles */
 
 header {
+  position: relative;
   display: flex;
-  justify-content: space-between; /* Space out logo and nav on desktop */
-  align-items: center;
-  padding: 1rem;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;   /* Center elements horizontally */
+  text-align: center;    /* Center text within elements */
+  gap: 1rem;             /* Back to original 1rem */
+  padding: 1rem;         /* Back to original 1rem */
   width: 100%;
-  position: relative; /* Needed for positioning */
-  z-index: 100; /* Ensure header context */
-  background-color: #161b22; /* Ensure header has background */
+  float: none;
+  margin-bottom: 0;
 }
 
 header h1 {
@@ -16,83 +18,10 @@ header h1 {
   font-size: 1.5em;
 }
 
-.site-logo {
-  z-index: 1001; /* Ensure logo is above nav if needed */
-}
-
-.site-logo img {
-    height: 50px; /* Default logo height */
-    width: auto; /* Maintain aspect ratio */
-}
-
-/* Hamburger Menu Styles */
-.nav-toggle {
-  display: none; // Hide the checkbox
-}
-
-.nav-toggle-label {
-  display: none; // Hidden by default, shown on mobile
-  cursor: pointer;
-  z-index: 1000;
-  padding: 10px; // Increase tap area
-  width: 45px; /* Fixed width */
-  height: 45px; /* Fixed height */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  display: block;
-  background-color: #c9d1d9; // Use a visible color
-  height: 3px;
-  width: 25px;
-  border-radius: 2px;
-  position: relative;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #c9d1d9;
-  border-radius: 2px;
-  transition: top 0.3s ease, transform 0.3s ease;
-}
-
-.nav-toggle-label span::before {
-  top: -8px;
-}
-
-.nav-toggle-label span::after {
-  top: 8px;
-}
-
-/* X-formation when checked */
-#nav-toggle:checked ~ .nav-toggle-label span {
-  background-color: transparent; // Hide middle line
-}
-
-#nav-toggle:checked ~ .nav-toggle-label span::before {
-  transform: rotate(45deg);
-  top: 0;
-}
-
-#nav-toggle:checked ~ .nav-toggle-label span::after {
-  transform: rotate(-45deg);
-  top: 0;
-}
-
-
 nav ul {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: wrap;       /* Allow nav items to wrap if needed */
+  justify-content: center; /* Center nav items */
   list-style: none;
   padding: 0;
   margin: 0;
@@ -132,129 +61,93 @@ footer p {
 }
 
 .cta-button {
-  display: inline-block;
-  background-color: #58a6ff;
-  color: #0d1117;
+  display: inline-block; /* Default to inline-block for desktop */
+  background-color: #58a6ff; /* USE BLUE for the button */
+  color: #0d1117; /* Use dark background color for text */
   padding: 0.5em 1em;
   border-radius: 4px;
   text-decoration: none;
   margin-top: 0.5em;
   transition: background-color 0.3s ease;
-  font-weight: bold;
+  font-weight: bold; /* Make text bold */
   position: relative;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .cta-button:hover {
-  background-color: #8ab4f8;
+  background-color: #8ab4f8; /* Lighter blue for hover */
   color: #0d1117;
 }
 
+/* Ensure button icon shows by default */
 .button-icon {
     display: inline;
 }
 
 
 @media (max-width: 600px) {
-  .site-logo img {
-    height: 40px; /* Smaller logo */
-    width: auto;
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 1rem; /* Tighter padding on mobile */
+    gap: 0.5rem;          /* Tighter gap on mobile */
   }
 
-  .nav-toggle-label {
-    display: flex; // Show the label on mobile
+  header h1 {
+      margin: 0;
+      font-size: 1.2em; /* Smaller H1 text on mobile */
+      line-height: 1.1; /* Tighter line height */
   }
 
-  nav {
-      position: absolute;
-      top: 100%; // Position right below the header
-      left: 0;
-      width: 100%;
-      background-color: #161b22; // Dark background
-      max-height: 0; // Hidden by default
-      overflow: hidden; // Hide content until opened
-      transition: max-height 0.4s ease-in-out; // Smooth transition
-      z-index: 999;
-      border-top: 1px solid #30363d; // Optional: adds a line
+  header h1 a {
+     display: flex; /* Make the link a flex container */
+     flex-direction: column; /* Stack logo and text */
+     align-items: center;    /* Center them */
+     gap: 0.3rem;            /* Small gap between logo and text */
+     text-decoration: none;
+     color: inherit;
+  }
+
+  header h1 img {
+    height: 40px; /* MUCH smaller logo height for mobile */
+    width: 131px; /* Adjusted width (40 * 3.27) */
+    margin-right: 0; /* Remove right margin when stacked */
   }
 
   nav ul {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 0; // Remove padding, add to links
-    gap: 0;
-  }
-
-  #nav-toggle:checked ~ nav {
-      max-height: 500px; // Or enough height to show all items
+    padding-left: 0;
+    gap: 0; /* Remove extra gap in nav */
   }
 
   nav li {
-      margin: 0; // Remove margins
+      margin-right: 0;
+      margin-bottom: 0.5rem;
       width: 100%;
-      border-bottom: 1px solid #30363d; // Separator lines
   }
-   nav li:last-child {
-      border-bottom: none;
-   }
 
   nav li a {
       display: block;
       text-align: center;
-      padding: 1rem; // Add padding for tapping
-      width: 100%;
-      box-sizing: border-box;
-  }
-  nav li a:hover {
-      background-color: #30363d; // Hover effect
+      padding: 0.4rem; /* Add some padding to make links easier to tap */
   }
 
   .cta-button {
     display: block;
     width: 100%;
     text-align: center;
-    padding: 0.8em 1em;
-    margin-top: 0.5rem;
+    align-self: auto;
+    left: auto;
+    padding: 0.8em 1em; /* Make button a bit taller for tapping */
+    margin-top: 0.5rem; /* Ensure some margin */
   }
 
   footer .service-line {
-    display: block;
-    margin-top: 0.3em;
+    display: block; /* This forces it onto a new line */
+    margin-top: 0.3em; /* Optional: Adds a little space between the lines */
   }
-}
-
-/* Desktop styles - ensure nav is visible and styled correctly */
-@media (min-width: 601px) {
-  .nav-toggle-label {
-    display: none !important; /* Force hide on desktop */
-  }
-
-  nav {
-    position: static;
-    width: auto;
-    background-color: transparent;
-    max-height: none !important;
-    overflow: visible;
-    border-top: none;
-  }
-
-  nav ul {
-    display: flex !important;
-    flex-direction: row;
-    padding: 0;
-    gap: 1rem;
-    width: auto;
-  }
-
-  nav li {
-      width: auto;
-      border-bottom: none;
-  }
-   nav li a {
-      padding: 0.5em 1em; /* Adjust padding back for desktop */
-      width: auto;
-   }
 }
 
 
@@ -264,6 +157,7 @@ footer p {
   margin: 0 auto;
 }
 
+/* Style for the footer brag line */
 .footer-brag {
   font-size: 0.85em;
   color: #8b949e;
@@ -271,6 +165,7 @@ footer p {
   margin-top: 0.5rem;
 }
 
+/* Blog Post List Styling */
 .post-list {
   list-style: none;
   padding-left: 0;
@@ -279,7 +174,7 @@ footer p {
 .post-list li {
   margin-bottom: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #30363d;
+  border-bottom: 1px solid #30363d; /* Subtle separator */
 }
 
 .post-list li:last-child {
@@ -288,7 +183,7 @@ footer p {
 
 .post-list h2 a {
   text-decoration: none;
-  color: #8ab4f8;
+  color: #8ab4f8; /* Link blue */
 }
 
 .post-list h2 a:hover {
@@ -297,7 +192,7 @@ footer p {
 
 .post-meta {
   font-size: 0.9em;
-  color: #8b949e;
+  color: #8b949e; /* Muted text color */
   margin-bottom: 0.5rem;
 }
 
@@ -310,6 +205,7 @@ a.read-more {
   text-decoration: none;
 }
 
+/* Single Post Styling */
 .post h1 {
   margin-bottom: 0.5rem;
 }
