@@ -31,12 +31,13 @@ header h1 {
 }
 
 .nav-toggle-label {
-  display: none; // Hidden by default, shown on mobile via @media
+  display: none; // Hidden by default, shown on mobile
   cursor: pointer;
   z-index: 1000;
   padding: 10px; // Increase tap area
   width: 45px; /* Fixed width */
   height: 45px; /* Fixed height */
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -103,8 +104,7 @@ main h1:first-child {
 }
 
 main {
-  margin-top: 2rem !important; /* Base margin with !important */
-  padding-top: 0 !important;   /* Ensure NO padding ever with !important */
+  margin-top: 2rem;
   padding-bottom: 0.1rem;
 }
 
@@ -210,11 +210,6 @@ footer p {
       background-color: #30363d; // Hover effect
   }
 
-  main {
-      margin-top: 3rem !important; /* Mobile margin with !important */
-      padding-top: 0 !important;   /* Ensure NO padding */
-  }
-
   .cta-button {
     display: block;
     width: 100%;
@@ -252,19 +247,13 @@ footer p {
     width: auto;
   }
 
-   nav li {
+  nav li {
       width: auto;
       border-bottom: none;
   }
    nav li a {
       padding: 0.5em 1em; /* Adjust padding back for desktop */
       width: auto;
-   }
-
-   /* Ensure main reverts to 2rem margin and NO padding on desktop */
-   main {
-      margin-top: 2rem !important; /* Desktop margin with !important */
-      padding-top: 0 !important;   /* Ensure NO padding */
    }
 }
 
