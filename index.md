@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home - Expert Remote IT Support for Complex Tech Challenges
+image: /assets/images/logo-blue.png
 ---
 
 <script type="application/ld+json">
