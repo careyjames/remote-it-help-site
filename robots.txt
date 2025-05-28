@@ -20,12 +20,14 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-# Disallow specific bots you don't want
+User-agent: facebookexternalhit 
+Allow: / 
+
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
 User-agent: CCBot
-Disallow: /
+Allow: /
 
 # Disallow all other bots (catch-all)
 User-agent: *
