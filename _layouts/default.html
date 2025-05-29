@@ -13,57 +13,73 @@
 
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "{{ site.title }}",
-      "url": "{{ site.url }}",
-      "description": "{{ site.description }}",
-      "telephone": "+1-619-853-5008",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "888 Prospect Street Suite 200",
-        "addressLocality": "La Jolla",
-        "addressRegion": "CA",
-        "postalCode": "92037",
-        "addressCountry": "US"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "USA"
-      },
-      "serviceType": [
-        "Remote IT Support",
-        "DNS Management",
-        "DMARC Implementation",
-        "Email Deliverability Troubleshooting",
-        "Mac Support",
-        "Cybersecurity Consulting"
-      ],
-      "provider": {
-        "@type": "Organization",
-        "name": "IT Help San Diego Inc.",
-        "url": "https://remote-it-help.com"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Remote IT Services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Remote Support (Hourly)"
-            },
-            "priceSpecification": {
-              "@type": "PriceSpecification",
-              "price": "275.00",
-              "priceCurrency": "USD",
-              "unitText": "HOUR"
-            }
-          }
-        ]
-      }
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "{{ site.title }}",
+  "url": "{{ site.url }}",
+  "description": "{{ site.description }}",
+  "telephone": "+1-619-853-5008",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "888 Prospect Street Suite 200",
+    "addressLocality": "La Jolla",
+    "addressRegion": "CA",
+    "postalCode": "92037",
+    "addressCountry": "US"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "USA"
+  },
+  "keywords": "Remote IT Support, On-Demand IT, macOS Support, iOS Support, DNS Management, DMARC, Google Workspace Migration & Setup, Email Security, Cybersecurity, Endpoint Protection, Mac Troubleshooting, IT Consulting, La Jolla, San Diego",
+  "serviceType": [
+    "Remote IT Support",
+    "Email Migration & Setup",
+    "Google Workspace Troubleshooting Migration & Setup",
+    "Mac & iOS Mail Support",
+    "Advanced DNS Management",
+    "DMARC Implementation",
+    "Website & Domain Recovery",
+    "Endpoint Security",
+    "Mobile Device Security (iOS)",
+    "Data Privacy Advisory",
+    "Mac Performance Troubleshooting",
+    "Apple Time Machine Backups",
+    "Cloud Storage Solutions",
+    "Disaster Recovery Planning",
+    "iPhone Text Message Extraction"
+  ],
+  "provider": {
+    "@type": "Organization",
+    "name": "IT Help San Diego Inc.",
+    "url": "{{ site.url }}", // Use site.url for consistency
+    "founder": {
+      "@type": "Person",
+      "name": "Carey Balboa",
+      "url": "{{ site.url }}/about.html" // Link to About page
     }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Remote IT Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Remote IT Consulting & Support" // Slightly more descriptive
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "275.00",
+          "priceCurrency": "USD",
+          "unitText": "HOUR",
+          "description": "Billed per hour with a 30-minute minimum charge." // Added detail
+        }
+      }
+    ]
+  }
+}
     </script>
 {% seo %}
   </head>
