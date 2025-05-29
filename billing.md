@@ -6,7 +6,7 @@ description: "View transparent remote IT support rates ($275/hour, 30-min minimu
 
 # Remote Consulting Rates & Policies 💳
 
-We follow clear policies for our remote IT support services.
+We follow clear policies for our remote IT support services. No monthly retainers!
 
 ## Remote Support Rate
 
