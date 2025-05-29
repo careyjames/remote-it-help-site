@@ -96,7 +96,7 @@ In brief: SPF specifies which servers can send on your behalf (like a return-add
     b.  After you find your DKIM keys, copy them into your DNS. When setting up DKIM, it's recommended that you use a key length of at least 2048 bits. Shorter keys, such as 1024 bits, are no longer considered secure enough against brute-force attacks.
     c.  Make sure you hit Activate or Start Authentication in Google or Publish in Exchange.
 
-Test the setup using Red Sift's Investigate, the web-browser-based Cyber Alliance, or if you are a Linux/macOS nerd like me, use the command-line tool I created, [DNS Tool](https://github.com/careyjames/dns-tool).
+Test the setup using Red Sift's Investigate, the web-browser-based Cyber Alliance, or if you are a Linux/macOS nerd like me, use the command-line tool I created, [dns-tool](/dns-tool.html).
 
 Monitor and adjust as needed.
 
