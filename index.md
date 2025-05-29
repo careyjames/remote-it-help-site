@@ -2,6 +2,7 @@
 layout: default
 title: Home - Expert Remote IT Support for Complex Tech Challenges
 image: /assets/images/logo-blue.png
+description: "Need expert remote IT help? 25+ years experience in Mac, iOS, DNS, email & cybersecurity. Get concierge-level, on-demand support nationwide."
 ---
 
 <script type="application/ld+json">
@@ -29,7 +30,7 @@ image: /assets/images/logo-blue.png
 }
 </script>
 
-# Remote IT Help 🛡️
+# Expert Remote IT Support for Complex Tech Challenges 🛡️
 
 Your tech problems are about to disappear. We deliver concierge-level remote tech help nationwide, backed by 25+ years of expert IT support experience, specializing in Mac, iOS, DNS, email deliverability, and cybersecurity.
 
