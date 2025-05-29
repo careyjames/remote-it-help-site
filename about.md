@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About Carey Balboa & Remote IT Help
+description: "Learn about Carey Balboa, the founder of Remote IT Help (IT Help San Diego Inc.), with 25 years of experience providing expert, ethical remote IT support."
 ---
 
 <script type="application/ld+json">
@@ -27,7 +28,7 @@ title: About Carey Balboa & Remote IT Help
       "postalCode": "92037",
       "addressCountry": "US"
     },
-     "url": "{{ site.url }}{{ page.url | relative_url }}"
+     "url": "{{ site.url }}"
   },
   "description": "Learn about Carey Balboa, the founder of Remote IT Help (IT Help San Diego Inc.), with 25 years of experience providing expert, ethical remote IT support.",
    "url": "{{ site.url }}{{ page.url | relative_url }}"
