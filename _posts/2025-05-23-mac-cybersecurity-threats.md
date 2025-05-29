@@ -64,7 +64,7 @@ All are American-based companies.
 * **CrowdStrike:** If you can afford them (at least $1200.00 per year for five computers). We have tested Crowdstrike with advanced and complete protection, and it can protect against nation-state-level attacks. This lightweight program protects your Mac and usually never bothers you until the day it saves your life. (The executive assistant director of the criminal, cyber, response, and service branch of the FBI, after 24 years, was named president of CrowdStrike Services, Shawn Henry.)
 
 **What is the best way to protect my company’s email users?**
-* Update DNS Records! (As discussed in our other blog post).
+* Update DNS Records! (As discussed in our [DNS Security Best Practices blog post](/2025-05-25-dns-security-best-practices.html))
 * **ProofPoint or Perception Point:** It sits before your Google Workspace or Microsoft 365 Exchange provider, stops evil, and reduces spam.
 * **RedSift and Mail Hardener are Great tools for achieving an A+ email quality rating and protecting and monitoring your users from attacks.
 
