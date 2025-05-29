@@ -30,7 +30,7 @@ description: "Need expert remote IT help? 25+ years experience in Mac, iOS, DNS,
 }
 </script>
 
-# Expert Remote IT Support for Complex Tech Challenges 🛡️
+# Expert Remote IT Support for Complex Tech Challenges&nbsp;🛡️
 
 Your tech problems are about to disappear. We deliver concierge-level remote tech help nationwide, backed by 25+ years of expert IT support experience, specializing in Mac, iOS, DNS, email deliverability, and cybersecurity.
 
