@@ -59,9 +59,9 @@ Stay up to date and have an antivirus program installed.
 
 **What is the best endpoint protection for Mac Cybersecurity Threats?**
 * **SentinelOne:** Its AI-powered security platform is used by some of the world’s largest and most security-conscious organizations, including Fortune 500 companies, government agencies, and financial institutions. It is trusted to protect against the most sophisticated cyber threats, including ransomware, zero-day attacks, and nation-state-sponsored attacks.
+* **CrowdStrike:** If you can afford them (at least $1200.00 per year for five computers). We have tested Crowdstrike with advanced and complete protection, and it can protect against nation-state-level attacks. This lightweight program protects your Mac and usually never bothers you until the day it saves your life. (The executive assistant director of the criminal, cyber, response, and service branch of the FBI, after 24 years, was named president of CrowdStrike Services, Shawn Henry.)  
 * Or, as the **minimum level of protection**, we would want any client to have **ThreatDown by Malwarebytes*.
 All are American-based companies.
-* **CrowdStrike:** If you can afford them (at least $1200.00 per year for five computers). We have tested Crowdstrike with advanced and complete protection, and it can protect against nation-state-level attacks. This lightweight program protects your Mac and usually never bothers you until the day it saves your life. (The executive assistant director of the criminal, cyber, response, and service branch of the FBI, after 24 years, was named president of CrowdStrike Services, Shawn Henry.)
 
 **What is the best way to protect my company’s email users?**
 * Update DNS Records! (As discussed in our [DNS Security Best Practices blog post](/2025-05-25-dns-security-best-practices.html))
