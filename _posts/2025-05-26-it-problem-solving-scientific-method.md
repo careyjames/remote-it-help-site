@@ -37,4 +37,4 @@ After experimentation, I conclude and implement the solution. I make sure to ver
 
 ### 7. Communication
 
-The final step in my process is communication of what I’ve learned. I take time to document the entire journey and its resolution, often writing up the insights in a blog post like this. Publishing these findings turns a one-off fix into a reusable guide and helps establish my authority on the topic. In essence, I’m closing the loop of the scientific method by sharing results, which benefits the broader IT community and reinforces a culture of evidence-based problem-solving.
+The final step in my process is communication of what I’ve learned. I take time to document the entire journey and its resolution, often writing up the insights in a [blog post like this](/blog.html). Publishing these findings turns a one-off fix into a reusable guide and helps establish my authority on the topic. In essence, I’m closing the loop of the scientific method by sharing results, which benefits the broader IT community and reinforces a culture of evidence-based problem-solving.
