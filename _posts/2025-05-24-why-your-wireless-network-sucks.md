@@ -61,4 +61,4 @@ Remember, we DO NOT accept payments from companies to recommend their products.
 Why does your wireless network suck? Often, it's the lack of an Ethernet backbone.
 Embracing an Ethernet backbone might be the game-changer your wireless network needs. If you’re tired of the spinning loading icon or the dreaded ‘no internet’ message, it might be time to rethink your network setup.
 
-Call 619-853-5008 and schedule a walkthrough/consultation to formulate a rock-solid plan for your home or office.
+Call 619-853-5008 and [schedule a walkthrough/consultation](https://schedule.it-help.tech/) to formulate a rock-solid plan for your home or office.
