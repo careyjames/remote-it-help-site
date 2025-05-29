@@ -115,7 +115,7 @@ When setting up DMARC and SPF, watch out for these common mistakes:
 ### FAQs: Your DNS Security Questions Answered
 
 * **Can I set up DMARC and SPF myself?**
-    Yes, but it’s advisable to consult a DNS security expert if you are unsure.
+    Yes, but it’s advisable to [consult a DNS security expert](/services.html) if you are unsure.
 * **What happens if I don’t set up DMARC or SPF?**
     Your email system will be more susceptible to phishing and spoofing attacks. Evil criminals can send emails as you! They use you@company.com to email your bank or friends and ask for money or worse. These are called BEC Attacks (Business Email Compromise).
 
