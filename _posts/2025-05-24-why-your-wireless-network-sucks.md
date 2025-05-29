@@ -5,6 +5,8 @@ date: 2025-05-24
 author: Carey Balboa
 categories: [Networking, WiFi, IT Infrastructure]
 tags: [ethernet, wifi, networking, home networking, office networking, cat6a, cat8]
+image: /assets/images/your-image-for-wireless-post.webp # <-- UPDATE THIS PATH
+description: "Discover why your Wi-Fi might be underperforming. Learn about the importance of an Ethernet backbone and how Cat6A/Cat8 cabling can boost your home or office network."
 ---
 
 Have you ever faced the frustration of slow or unreliable Wi-Fi in your home or office? You’re not alone. The secret to a robust and speedy wireless network lies in an overlooked component: the Ethernet backbone.
