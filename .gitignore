@@ -5,3 +5,11 @@ _site/
 .bundle/
 .vscode/
 
+# CloudFront deployment artifacts
+cisa-secure-edge.json
+dist*.json
+strip-server-header.js
+strip-server.js
+# variants created during patching
+dist-nofn.json
+dist-new.json
