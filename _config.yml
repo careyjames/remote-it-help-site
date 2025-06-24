@@ -4,6 +4,7 @@ description: "Get expert, on-demand remote IT support nationwide. We specialize 
 logo: /assets/images/logo-blue.png
 baseurl: ""
 url: "https://remote-it-help.com"
+canonical_base: "https://www.it-help.tech"
 
 theme: jekyll-theme-minimal
 highlighter: rouge
